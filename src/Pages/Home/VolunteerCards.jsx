@@ -1,4 +1,4 @@
-const SixData = ({ item }) => {
+const VolunteerCards = ({ item }) => {
   const { postTitle, category, deadline, thumbnail } = item;
 
   return (
@@ -30,8 +30,8 @@ const SixData = ({ item }) => {
             <span className='font-bold text-gray-800 dark:text-gray-200'>
               {deadline}
             </span>
-            <button className='px-4 py-3 text-sm font-extrabold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none'>
-              Apply
+            <button className='px-4 py-3 text-sm font-extrabold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none'>
+              View Details
             </button>
           </div>
         </div>
@@ -40,4 +40,4 @@ const SixData = ({ item }) => {
   );
 };
 
-export default SixData;
+export default VolunteerCards;

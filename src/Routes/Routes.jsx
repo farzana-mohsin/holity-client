@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import Home from "../Pages/Home/Home";
 import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
+import NeedVolunteers from "../Pages/NeedVolunteers/NeedVolunteers";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch(`${import.meta.env.VITE_API_URL}/posts?limit=4`),
       },
       {
         path: "/register",
@@ -20,6 +22,11 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login></Login>,
+      },
+      {
+        path: "/need-volunteers",
+        element: <NeedVolunteers></NeedVolunteers>,
+        loader: () => fetch(`${import.meta.env.VITE_API_URL}/posts`),
       },
     ],
   },
