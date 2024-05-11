@@ -19,22 +19,41 @@ const Navbar = () => {
       <li className='text-white'>
         <NavLink to='/'>Home</NavLink>
       </li>
-      <li className='text-white'>
+      <li className='text-white '>
         <NavLink to='/'>Volunteers Needed</NavLink>
       </li>
       {/* <li className='text-white'>
         <NavLink to='/all-items'>All Arts & Crafts</NavLink>
       </li> */}
-      {/* {user && (
+      {user && (
         <>
-          <li className='text-white'>
+          <div className=''>
+            <ul className='menu menu-horizontal '>
+              <li>
+                <details className='menu menu-horizontal z-[3]'>
+                  <summary className='  text-white text-lg rounded-xl '>
+                    My Profile
+                  </summary>
+                  <ul className=' bg-black text-white'>
+                    <li className='px-3'>
+                      <a>Link 1</a>
+                    </li>
+                    <li className='px-3'>
+                      <a>Link 2</a>
+                    </li>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </div>
+          {/* <li className='text-white'>
             <NavLink to='/add-item'>Add Craft</NavLink>
           </li>
           <li className='text-white'>
             <NavLink to='/my-items'>My Arts & Crafts</NavLink>
-          </li>
+          </li> */}
         </>
-      )} */}
+      )}
     </>
   );
 
@@ -50,7 +69,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='navbar lg:px-10 py-7 bg-black mx-auto '>
+      <div className='navbar lg:px-10  bg-black mx-auto '>
         <div className='navbar-start'>
           <div className='dropdown'>
             <div
@@ -91,13 +110,15 @@ const Navbar = () => {
           </h1>
         </div>
         <div className='navbar-end hidden lg:flex'>
-          <ul className='flex flex-row px-1 space-x-5'>{navLinks}</ul>
+          <ul className='flex flex-row px-1 space-x-5 justify-center items-center'>
+            {navLinks}
+          </ul>
         </div>
         <div className=' flex flex-col md:flex-row '>
           {user ? (
             <div className='flex md:flex-row items-center gap-2'>
               <div
-                className='tooltip tooltip-bottom border-none bg-none rounded-full mx-3'
+                className='tooltip tooltip-bottom border-none bg-none rounded-full mr-3 ml-0'
                 data-tip={user?.displayName || "user not found"}
               >
                 <button className='rounded-full bg-none border-none w-12'>
@@ -160,6 +181,26 @@ const Navbar = () => {
             </li>
             <li>
               <a>Logout</a>
+            </li>
+          </ul>
+        </div> */}
+
+        {/* <div className='flex-none'>
+          <ul className='menu menu-horizontal px-1'>
+            <li>
+              <details>
+                <summary className='py-[13px] bg-orange-800 text-white  border text-sm rounded-xl ml-1 hover:bg-yellow-400 '>
+                  My Profile
+                </summary>
+                <ul className='p-2 bg-base-100 rounded-t-none'>
+                  <li>
+                    <a>Link 1</a>
+                  </li>
+                  <li>
+                    <a>Link 2</a>
+                  </li>
+                </ul>
+              </details>
             </li>
           </ul>
         </div> */}
