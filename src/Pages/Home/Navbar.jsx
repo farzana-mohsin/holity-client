@@ -19,6 +19,9 @@ const Navbar = () => {
       <li className='text-white'>
         <NavLink to='/'>Home</NavLink>
       </li>
+      <li className='text-white'>
+        <NavLink to='/'>Volunteers Needed</NavLink>
+      </li>
       {/* <li className='text-white'>
         <NavLink to='/all-items'>All Arts & Crafts</NavLink>
       </li> */}
