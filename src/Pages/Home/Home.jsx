@@ -1,6 +1,6 @@
 import Carousel from "./Carousel";
 import { useState } from "react";
-import VolunteerCards from "./VolunteerCards";
+import VolunteerCard from "./VolunteerCard";
 import { Link, useLoaderData } from "react-router-dom";
 
 const Home = () => {
@@ -12,10 +12,10 @@ const Home = () => {
       <Carousel></Carousel>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12'>
         {allItems.map((item, index) => (
-          <VolunteerCards
+          <VolunteerCard
             key={index}
             item={item}
-          ></VolunteerCards>
+          ></VolunteerCard>
         ))}
       </div>
       <Link to='/need-volunteers'>

@@ -13,7 +13,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch(`${import.meta.env.VITE_API_URL}/posts?limit=4`),
+        loader: () => fetch(`${import.meta.env.VITE_API_URL}/posts?limit=6`),
       },
       {
         path: "/register",

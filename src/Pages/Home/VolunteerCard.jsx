@@ -1,4 +1,6 @@
-const VolunteerCards = ({ item }) => {
+import PropTypes from "prop-types";
+
+const VolunteerCard = ({ item }) => {
   const { postTitle, category, deadline, thumbnail } = item;
 
   return (
@@ -9,12 +11,7 @@ const VolunteerCards = ({ item }) => {
           style={{
             backgroundImage: `url(${thumbnail})`,
           }}
-        >
-          {/* // style={{
-            backgroundImage: url(https://images.unsplash.com/photo-1521903062400-b80f2cb8cb9d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80)"
-          }}
-        > */}
-        </div>
+        ></div>
 
         <div className='w-72 -mt-20 overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800'>
           <h3 className='py-4  font-bold tracking-wide text-center text-gray-800 dark:text-white'>
@@ -40,4 +37,8 @@ const VolunteerCards = ({ item }) => {
   );
 };
 
-export default VolunteerCards;
+VolunteerCard.propTypes = {
+  item: PropTypes.object.isRequired,
+};
+
+export default VolunteerCard;
