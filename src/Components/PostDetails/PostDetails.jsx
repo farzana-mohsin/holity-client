@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -10,6 +10,7 @@ const PostDetails = () => {
   const [postDetails] = useState(loader);
 
   const {
+    _id,
     postTitle,
     category,
     deadline,
@@ -32,6 +33,8 @@ const PostDetails = () => {
             <li>Rating: {new Date(deadline).toLocaleDateString()}</li>
             <li>Number of Volunteers Needed: {number}</li>
             <li>Location: {location}</li>
+            <p>Organizer's name: {postCreator?.name}</p>
+            <p>Organizer's email: {postCreator?.email}</p>
           </ul>
           <p className='my-10'>{description}</p>
         </div>
@@ -42,11 +45,14 @@ const PostDetails = () => {
             className='w-full h-[700px] shadow-2xl'
           />
         </div>
-        <p>{postCreator?.name}</p>
-        <p>{postCreator?.email}</p>
-        <p>{postCreator?.photo}</p>
       </div>
-      {postCreator?.email === user.email ? "" : <button>Be a Volunteer</button>}
+      {postCreator?.email === user.email ? (
+        ""
+      ) : (
+        <Link to={`/be-a-volunteer/${_id}`}>
+          <button>Be a Volunteer</button>
+        </Link>
+      )}
     </div>
   );
 };

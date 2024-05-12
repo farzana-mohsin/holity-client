@@ -17,7 +17,7 @@ const AddVolunteer = () => {
     const deadline = startDate;
     const category = form.category.value;
     const location = form.location.value;
-    const number = form.number.value;
+    const numberOfVolunteers = parseInt(form.number.value);
     const description = form.description.value;
     const postData = {
       thumbnail,
@@ -25,14 +25,13 @@ const AddVolunteer = () => {
       deadline,
       category,
       location,
-      number,
+      numberOfVolunteers,
       description,
-      postCreator: {
+      organizer: {
         email,
         name: user?.displayName,
         photo: user?.photoURL,
       },
-      bid_count: 0,
     };
 
     fetch(`${import.meta.env.VITE_API_URL}/posts`, {
