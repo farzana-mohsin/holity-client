@@ -18,9 +18,11 @@ const Home = () => {
           ></VolunteerCard>
         ))}
       </div>
-      <Link to='/need-volunteers'>
-        <button className='mx-auto text-center'>See All</button>
-      </Link>
+      <div className='mx-auto text-center mt-10 p-2 border border-black rounded-xl w-32'>
+        <Link to='/need-volunteers'>
+          <button className=' text-xl'>See All</button>
+        </Link>
+      </div>
     </div>
   );
 };

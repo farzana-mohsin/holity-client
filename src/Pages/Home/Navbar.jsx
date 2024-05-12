@@ -7,7 +7,7 @@ import { FaCrown } from "react-icons/fa";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  const [theme, setTheme] = useState("emerald");
+  const [setTheme] = useState("emerald");
   const handleToggle = (e) => {
     if (e.target.checked) {
       setTheme("retro");
@@ -20,7 +20,7 @@ const Navbar = () => {
         <NavLink to='/'>Home</NavLink>
       </li>
       <li className='text-white '>
-        <NavLink to='/'>Volunteers Needed</NavLink>
+        <NavLink to='/need-volunteers'>Volunteers Needed</NavLink>
       </li>
       {/* <li className='text-white'>
         <NavLink to='/all-items'>All Arts & Crafts</NavLink>
@@ -36,10 +36,10 @@ const Navbar = () => {
                   </summary>
                   <ul className=' bg-black text-white'>
                     <li className='px-3'>
-                      <a>Link 1</a>
+                      <NavLink to='/add-post'>Add Volunteer Post</NavLink>
                     </li>
                     <li className='px-3'>
-                      <a>Link 2</a>
+                      <NavLink to='/manage-posts'>Manage My Posts</NavLink>
                     </li>
                   </ul>
                 </details>
