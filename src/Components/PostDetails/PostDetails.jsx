@@ -30,7 +30,7 @@ const PostDetails = () => {
           </h1>
           <p className='my-8 text-lg sm:mb-12 xl:max-w-3xl '>{category}</p>
           <ul>
-            <li>Rating: {new Date(deadline).toLocaleDateString()}</li>
+            <li>Deadline: {new Date(deadline).toLocaleDateString()}</li>
             <li>Number of Volunteers Needed: {number}</li>
             <li>Location: {location}</li>
             <p>Organizer's name: {postCreator?.name}</p>
