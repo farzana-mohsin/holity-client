@@ -27,7 +27,7 @@ const AddVolunteer = () => {
       location,
       number,
       description,
-      buyer: {
+      postCreator: {
         email,
         name: user?.displayName,
         photo: user?.photoURL,
