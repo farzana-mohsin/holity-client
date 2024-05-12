@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const VolunteerCard = ({ item }) => {
-  const { postTitle, category, deadline, thumbnail } = item;
+  const { postTitle, category, deadline, thumbnail, _id } = item;
 
   return (
     <div>
@@ -27,9 +28,12 @@ const VolunteerCard = ({ item }) => {
             <span className='font-bold text-gray-800 dark:text-gray-200'>
               {deadline}
             </span>
-            <button className='px-4 py-3 text-sm font-extrabold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none'>
-              View Details
-            </button>
+            <Link to={`/post-details/${_id}`}>
+              {" "}
+              <button className='px-4 py-3 text-sm font-extrabold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none'>
+                View Details
+              </button>
+            </Link>
           </div>
         </div>
       </div>

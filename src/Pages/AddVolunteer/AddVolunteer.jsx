@@ -4,7 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
 
-const AddVolunteer = (e) => {
+const AddVolunteer = () => {
   const { user } = useContext(AuthContext);
   const [startDate, setStartDate] = useState(new Date());
 

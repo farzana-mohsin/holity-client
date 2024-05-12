@@ -18,7 +18,7 @@ const Home = () => {
           ></VolunteerCard>
         ))}
       </div>
-      <div className='mx-auto text-center mt-10 p-2 border border-black rounded-xl w-32'>
+      <div className='mx-auto text-center my-10 p-2 border border-black rounded-xl w-48'>
         <Link to='/need-volunteers'>
           <button className=' text-xl'>See All</button>
         </Link>

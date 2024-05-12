@@ -5,6 +5,7 @@ import Register from "../Pages/Register/Register";
 import Login from "../Pages/Login/Login";
 import NeedVolunteers from "../Pages/NeedVolunteers/NeedVolunteers";
 import AddVolunteer from "../Pages/AddVolunteer/AddVolunteer";
+import PostDetails from "../Components/PostDetails/PostDetails";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "/add-post",
         element: <AddVolunteer></AddVolunteer>,
+      },
+      {
+        path: "/item-details/:id",
+        element: <PostDetails></PostDetails>,
+        loader: ({ params }) =>
+          fetch(
+            `https://assignment-ten-server-lilac.vercel.app/items/${params.id}`
+          ),
       },
     ],
   },

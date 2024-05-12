@@ -29,16 +29,16 @@ const Navbar = () => {
         <>
           <div className=''>
             <ul className='menu menu-horizontal '>
-              <li>
-                <details className='menu menu-horizontal z-[3]'>
-                  <summary className='  text-white text-lg rounded-xl '>
+              <li className=''>
+                <details className='menu menu-horizontal z-[3] w-full'>
+                  <summary className=' text-white rounded-xl'>
                     My Profile
                   </summary>
                   <ul className=' bg-black text-white'>
-                    <li className='px-3'>
+                    <li className=''>
                       <NavLink to='/add-post'>Add Volunteer Post</NavLink>
                     </li>
-                    <li className='px-3'>
+                    <li className=''>
                       <NavLink to='/manage-posts'>Manage My Posts</NavLink>
                     </li>
                   </ul>

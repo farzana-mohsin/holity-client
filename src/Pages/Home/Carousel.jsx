@@ -36,13 +36,13 @@ export default function Carousel() {
         <SwiperSlide>
           <Slide
             image={bgImg1}
-            text='Get Your Web Development Projects Done in minutes'
+            text='We try to help people with volunteering'
           />
         </SwiperSlide>
         <SwiperSlide>
           <Slide
             image={bgImg2}
-            text='Get Your Graphics Design Projects Done in minutes'
+            text='Try our programs and help people for their needs'
           />
         </SwiperSlide>
         <SwiperSlide>

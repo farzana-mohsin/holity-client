@@ -33,9 +33,22 @@ const NeedVolunteers = () => {
     <div>
       <form
         onSubmit={handleSearch}
-        className='flex justify-center mx-auto'
+        className='flex justify-center mx-auto my-10'
       >
-        <label className='input input-bordered border-black flex items-center gap-2 w-1/4 my-10'>
+        <div className='join'>
+          <input
+            className='input input-bordered join-item rounded-l-xl'
+            name='input'
+            placeholder='Search here'
+          />
+          <button
+            type='submit'
+            className='btn join-item rounded-r-xl'
+          >
+            Search
+          </button>
+        </div>
+        {/* <label className='input input-bordered border-black flex items-center gap-2 w-1/4 my-10'>
           <input
             name='input'
             type='text'
@@ -43,7 +56,7 @@ const NeedVolunteers = () => {
             placeholder='Search'
           />
         </label>
-        <button type='submit'>Click to search</button>
+        <button type='submit'>Click to search</button> */}
       </form>
 
       {allItems.length ? (
@@ -73,7 +86,7 @@ const NeedVolunteers = () => {
                   Page not found
                 </h1>
                 <p className='mt-4 text-gray-500 dark:text-gray-400'>
-                  The page you are looking for doesn't exist. Here are some
+                  The page you are looking for doesn&apos;t exist. Here are some
                   helpful links:
                 </p>
 
