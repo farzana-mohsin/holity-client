@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { FaCrown } from "react-icons/fa";
+// import { MdOutlineVolunteerActivism } from "react-icons/md";
 
 // import { Link } from "react-router-dom";
 
@@ -16,36 +16,99 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li className='text-white'>
-        <NavLink to='/'>Home</NavLink>
+      <li className=''>
+        <NavLink
+          to='/'
+          className={({ isActive }) =>
+            isActive ? "font-bold text-[#f77d5c] " : "font-bold"
+          }
+        >
+          Home
+        </NavLink>
       </li>
-      <li className='text-white '>
-        <NavLink to='/need-volunteers'>Volunteers Needed</NavLink>
+      <li className=' mr-0'>
+        <NavLink
+          to='/need-volunteers'
+          className={({ isActive }) =>
+            isActive ? "font-bold text-[#f77d5c]" : "font-bold"
+          }
+        >
+          Volunteers Needed
+        </NavLink>
       </li>
       {/* <li className='text-white'>
         <NavLink to='/all-items'>All Arts & Crafts</NavLink>
       </li> */}
       {user && (
         <>
-          <div className=''>
+          <div className='dropdown dropdown-hover'>
+            <div
+              tabIndex={0}
+              role='button'
+              className=' ml-0 mr-3 font-bold '
+            >
+              My Profile
+            </div>
+            <ul
+              tabIndex={0}
+              className='dropdown-content z-[4] menu p-2 mt-5 shadow bg-base-100 rounded-box w-48'
+            >
+              <li>
+                <NavLink
+                  to='/add-post'
+                  className={({ isActive }) =>
+                    isActive ? "font-bold text-[#f77d5c]" : "font-bold"
+                  }
+                >
+                  Add Volunteer Post
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to='/manage-posts'
+                  className={({ isActive }) =>
+                    isActive ? "font-bold text-[#f77d5c]" : "font-bold"
+                  }
+                >
+                  Manage My Posts
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+
+          {/* <div className=''>
             <ul className='menu menu-horizontal '>
               <li className=''>
                 <details className='menu menu-horizontal z-[3] w-full'>
-                  <summary className=' text-white rounded-xl'>
+                  <summary className='text-lg font-bold rounded-xl'>
                     My Profile
                   </summary>
-                  <ul className=' bg-black text-white'>
+                  <ul className=' '>
                     <li className=''>
-                      <NavLink to='/add-post'>Add Volunteer Post</NavLink>
+                      <NavLink
+                        to='/add-post'
+                        className={({ isActive }) =>
+                          isActive ? "font-bold text-[#f77d5c]" : "font-bold"
+                        }
+                      >
+                        Add Volunteer Post
+                      </NavLink>
                     </li>
                     <li className=''>
-                      <NavLink to='/manage-posts'>Manage My Posts</NavLink>
+                      <NavLink
+                        to='/manage-posts'
+                        className={({ isActive }) =>
+                          isActive ? "font-bold text-[#f77d5c]" : "font-bold"
+                        }
+                      >
+                        Manage My Posts
+                      </NavLink>
                     </li>
                   </ul>
                 </details>
               </li>
             </ul>
-          </div>
+          </div> */}
           {/* <li className='text-white'>
             <NavLink to='/add-item'>Add Craft</NavLink>
           </li>
@@ -69,7 +132,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='navbar lg:px-10  bg-black mx-auto '>
+      <div className='navbar lg:px-10 py-5 shadow-lg mx-auto '>
         <div className='navbar-start'>
           <div className='dropdown'>
             <div
@@ -99,18 +162,25 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <h1 className='animate__animated animate__fadeInLeft text-xl md:text-3xl font-bold text-white pl-1'>
-            Crown
-          </h1>
-          <div className='flex items-center justify-center text-4xl font-bold  text-orange-700 ml-2'>
-            <FaCrown />
+          {/* <h1 className='animate__animated animate__fadeInLeft text-xl md:text-3xl font-bold text-white pl-1'>
+            
+          </h1> */}
+          {/* <div className='flex items-center justify-center text-5xl  text-green-400 ml-2'>
+            <MdOutlineVolunteerActivism />
+          </div> */}
+          {/* <h1 className='animate__animated animate__fadeInLeft text-xl md:text-3xl font-bold text-green-400 pl-1'>
+            is Hope
+          </h1> */}
+          <div>
+            <img
+              className='w-[50%]'
+              src='https://i.ibb.co/kHvrYjc/logo-default-334x134.png'
+              alt=''
+            />
           </div>
-          <h1 className='animate__animated animate__fadeInLeft text-xl md:text-3xl font-bold text-white pl-1'>
-            Art
-          </h1>
         </div>
         <div className='navbar-end hidden lg:flex'>
-          <ul className='flex flex-row px-1 space-x-5 justify-center items-center'>
+          <ul className='flex flex-row px-1 space-x-5 justify-center items-center text-lg'>
             {navLinks}
           </ul>
         </div>
@@ -134,7 +204,7 @@ const Navbar = () => {
               </div>
 
               <button
-                className='btn bg-orange-800 hover:bg-yellow-400 text-white md:px-4 md:py-2 border text-sm rounded-xl mr-3'
+                className='btn bg-[#6faf9f] hover:bg-[#727C82] text-white md:px-4 md:py-2 border-2 border-[#f77d5c] text-sm rounded-xl mr-3'
                 onClick={() => handleSignOut()}
               >
                 Sign Out
@@ -143,12 +213,12 @@ const Navbar = () => {
           ) : (
             <div className='flex flex-row'>
               <Link to='/login'>
-                <button className='btn  bg-orange-800 text-white md:px-4 md:py-2 border text-sm rounded-xl md:ml-2 hover:bg-yellow-400'>
+                <button className='btn  bg-[#6faf9f] text-white md:px-4 md:py-2 border text-sm rounded-xl md:ml-2 hover:bg-[#727C82]'>
                   Login
                 </button>
               </Link>
               <Link to='/register'>
-                <button className='btn  bg-orange-800 text-white md:px-4 md:py-2 border text-sm rounded-xl ml-2  hover:bg-yellow-400'>
+                <button className='btn  bg-[#6faf9f] text-white md:px-4 md:py-2 border text-sm rounded-xl ml-2  hover:bg-[#727C82]'>
                   Register
                 </button>
               </Link>
