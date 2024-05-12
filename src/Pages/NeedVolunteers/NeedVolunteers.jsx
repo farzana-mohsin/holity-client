@@ -6,6 +6,10 @@ const NeedVolunteers = () => {
   const loader = useLoaderData();
   const [allItems, setAllItems] = useState(loader);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleSearch = (e) => {
     e.preventDefault();
     const form = e.target;
