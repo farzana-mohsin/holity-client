@@ -9,6 +9,7 @@ import PostDetails from "../Components/PostDetails/PostDetails";
 import PrivateRoutes from "./PrivateRoutes";
 import BeAVolunteer from "../Pages/BeAVolunteer/BeAVolunteer";
 import ManageMyPosts from "../Pages/ManageMyPosts/ManageMyPosts";
+import UpdatePost from "../Pages/ManageMyPosts/UpdatePost";
 
 const router = createBrowserRouter([
   {
@@ -73,6 +74,17 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: () => fetch(`${import.meta.env.VITE_API_URL}/posts`),
+      },
+      {
+        path: "/update-post/:id",
+        element: (
+          <PrivateRoutes>
+            <UpdatePost></UpdatePost>
+          </PrivateRoutes>
+        ),
+        loader: ({ params }) =>
+          fetch(`${import.meta.env.VITE_API_URL}/post/${params.id}`),
+        credentials: "include",
       },
     ],
   },
