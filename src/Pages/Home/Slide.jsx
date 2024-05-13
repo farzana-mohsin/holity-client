@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Slide = ({ image, text }) => {
   return (
@@ -10,13 +11,13 @@ const Slide = ({ image, text }) => {
     >
       <div className='flex items-center justify-center w-full h-full bg-gray-900/25'>
         <div className='text-center'>
-          <h1 className='text-3xl font-semibold text-white lg:text-4xl'>
+          <h1 className='text-2xl font-semibold text-white lg:text-4xl'>
             {text}
           </h1>
           <br />
           <Link
             to='/need-volunteers'
-            className='w-full px-5 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-gray-600 rounded-md lg:w-auto hover:bg-gray-500 focus:outline-none focus:bg-gray-500'
+            className='w-full p-2 lg:px-5 lg:py-4 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-[#6faf9f] rounded-md lg:w-auto hover:bg-[#727C82] focus:outline-double focus:bg-[#f77d5c] border'
           >
             Available Volunteer Positions
           </Link>
@@ -24,6 +25,11 @@ const Slide = ({ image, text }) => {
       </div>
     </div>
   );
+};
+
+Slide.propTypes = {
+  text: PropTypes.text.isRequired,
+  image: PropTypes.image.isRequired,
 };
 
 export default Slide;

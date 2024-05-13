@@ -17,7 +17,7 @@ import bgImg4 from "../../../public/images/The-Career-Benefits-of-Volunteering-D
 
 export default function Carousel() {
   return (
-    <div className=' px-6 container mx-auto py-10'>
+    <div className=' w-full px-6 mx-auto py-10 rounded-xl'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -36,7 +36,7 @@ export default function Carousel() {
         <SwiperSlide>
           <Slide
             image={bgImg1}
-            text='We try to help people with volunteering'
+            text='We are taking small steps to make Earth a better planet'
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -48,13 +48,13 @@ export default function Carousel() {
         <SwiperSlide>
           <Slide
             image={bgImg3}
-            text='Start Your Digital Marketing Campaigns up n running'
+            text='Give a helping hand to those who need it'
           />
         </SwiperSlide>
         <SwiperSlide>
           <Slide
             image={bgImg4}
-            text='Start Your Digital Marketing Campaigns up n running'
+            text='We try to help people with volunteering'
           />
         </SwiperSlide>
       </Swiper>
