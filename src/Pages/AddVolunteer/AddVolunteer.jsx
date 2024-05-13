@@ -57,7 +57,7 @@ const AddVolunteer = () => {
   return (
     <div
       className='flex justify-center items-center min-h-[calc(100vh-306px)] my-12
-      bg-[#F4F3F0] p-24 lg:w-1/2 mx-auto py-7 lg:py-3 lg:my-5 border border-yellow-700
+      bg-[#f7ffff] p-24 lg:w-1/2 mx-auto py-7 lg:py-3 lg:my-5 border border-yellow-700
       rounded-lg'
     >
       <section className=' p-2 md:p-6 mx-auto'>
@@ -117,7 +117,7 @@ const AddVolunteer = () => {
                 Category
               </label>
               <select
-                className='select select-bordered'
+                className='border p-2 rounded-md'
                 name='category'
               >
                 <option
@@ -126,10 +126,10 @@ const AddVolunteer = () => {
                 >
                   Pick one category
                 </option>
-                <option>Healthcare</option>
-                <option>Education</option>
-                <option>Social Service</option>
-                <option>Animal Welfare</option>
+                <option value='Web Development'>Healthcare</option>
+                <option value='Graphics Design'>Education</option>
+                <option value='Digital Marketing'>Social Service</option>
+                <option value='Digital Marketing'>Animal Welfare</option>
               </select>
             </div>
             <div>
@@ -212,7 +212,7 @@ const AddVolunteer = () => {
           <div className='flex  mt-6'>
             <input
               type='submit'
-              className='btn btn-block mt-8 md:mt-0 bg-orange-800 text-white md:px-4 md:py-2 text-sm rounded-xl hover:bg-yellow-400 border-2 border-white'
+              className='btn-block mt-8 md:mt-0 md:px-4 md:py-2 btn bg-[#6faf9f] hover:bg-[#727C82] text-white px-2 py-1 lg:px-4 lg:py-2 border-2 border-[#f77d5c] text-lg font-bold lg:text-sm rounded-xl lg:mr-3'
               value='Add Post'
             />
           </div>

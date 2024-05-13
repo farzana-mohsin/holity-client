@@ -75,7 +75,7 @@ const UpdatePost = () => {
   return (
     <div
       className='flex justify-center items-center min-h-[calc(100vh-306px)] my-12
-      bg-[#F4F3F0] p-24 lg:w-1/2 mx-auto py-7 lg:py-3 lg:my-5 border border-yellow-700
+      bg-[#f7ffff] p-24 lg:w-1/2 mx-auto py-7 lg:py-3 lg:my-5 border border-yellow-700
       rounded-lg'
     >
       <section className=' p-2 md:p-6 mx-auto'>
@@ -137,15 +137,17 @@ const UpdatePost = () => {
                 Category
               </label>
               <select
-                className='select select-bordered'
+                className='border p-2 rounded-md'
                 name='category'
               >
                 <option
+                  defaultValue={category}
                   disabled
                   selected
                 >
                   Pick one category
                 </option>
+
                 <option>Healthcare</option>
                 <option>Education</option>
                 <option>Social Service</option>
@@ -160,6 +162,7 @@ const UpdatePost = () => {
                 Location
               </label>
               <input
+                defaultValue={location}
                 placeholder='Location'
                 name='location'
                 type='text'
@@ -175,7 +178,7 @@ const UpdatePost = () => {
                 No. of Volunteers Needed
               </label>
               <input
-                defaultValue={0}
+                defaultValue={numberOfVolunteers}
                 name='number'
                 type='number'
                 className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
@@ -225,6 +228,7 @@ const UpdatePost = () => {
             </label>
             <textarea
               className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-lg  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+              defaultValue={description}
               name='description'
               id='description'
             ></textarea>
@@ -232,7 +236,7 @@ const UpdatePost = () => {
           <div className='flex  mt-6'>
             <input
               type='submit'
-              className='btn btn-block mt-8 md:mt-0 bg-orange-800 text-white md:px-4 md:py-2 text-sm rounded-xl hover:bg-yellow-400 border-2 border-white'
+              className='btn-block mt-8 md:mt-0 md:px-4 md:py-2 btn bg-[#6faf9f] hover:bg-[#727C82] text-white px-2 py-1 lg:px-4 lg:py-2 border-2 border-[#f77d5c] text-lg font-bold lg:text-sm rounded-xl lg:mr-3'
               value='Update Post'
             />
           </div>

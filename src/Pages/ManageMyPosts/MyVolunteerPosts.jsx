@@ -129,7 +129,7 @@ const MyVolunteerPosts = () => {
                 </Link>
               </td>
               <td className='md:px-2 lg:px-8 py-4 text-md whitespace-nowrap'>
-                <div className='flex items-center ml-4'>
+                <div className='flex items-center text-center'>
                   <button
                     onClick={() => handleDelete(post._id)}
                     className='text-gray-500 transition-colors duration-200   hover:text-red-500 focus:outline-none'
