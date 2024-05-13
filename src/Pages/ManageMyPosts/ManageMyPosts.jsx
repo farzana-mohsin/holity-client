@@ -1,10 +1,8 @@
-import { useContext, useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { AuthContext } from "../../Provider/AuthProvider";
 import MyVolunteerPosts from "./MyVolunteerPosts";
 import MyVolunteerRequests from "./MyVolunteerRequests";
+import { Helmet } from "react-helmet";
 
 const ManageMyPosts = () => {
   // useEffect(() => {
@@ -19,6 +17,9 @@ const ManageMyPosts = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Holity Social Support | Manage My Posts</title>
+      </Helmet>
       <Tabs>
         <div className=' container px-6 py-10 mx-auto'>
           <h1 className='text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl '>

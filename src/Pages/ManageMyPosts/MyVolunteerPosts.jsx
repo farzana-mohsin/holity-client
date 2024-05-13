@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const MyVolunteerPosts = () => {
   const { user } = useContext(AuthContext);
@@ -52,6 +53,9 @@ const MyVolunteerPosts = () => {
 
   return (
     <div className='w-full my-10 container mx-auto min-h-[calc(50vh-306px)]'>
+      <Helmet>
+        <title>Holity Social Support | My Volunteer Posts</title>
+      </Helmet>
       <table className=' divide-y divide-gray-200  w-full'>
         <thead className='bg-[#d6eed7]'>
           <tr>

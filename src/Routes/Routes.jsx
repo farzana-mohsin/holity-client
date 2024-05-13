@@ -83,8 +83,9 @@ const router = createBrowserRouter([
           </PrivateRoutes>
         ),
         loader: ({ params }) =>
-          fetch(`${import.meta.env.VITE_API_URL}/post/${params.id}`),
-        credentials: "include",
+          fetch(`${import.meta.env.VITE_API_URL}/post/${params.id}`, {
+            credentials: "include",
+          }),
       },
     ],
   },

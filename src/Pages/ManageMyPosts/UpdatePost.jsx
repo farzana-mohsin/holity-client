@@ -4,6 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useLoaderData } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const UpdatePost = () => {
   const loader = useLoaderData();
@@ -78,6 +79,9 @@ const UpdatePost = () => {
       bg-[#f7ffff] p-24 lg:w-1/2 mx-auto py-7 lg:py-3 lg:my-5 border border-yellow-700
       rounded-lg'
     >
+      <Helmet>
+        <title>Holity Social Support | Update Post</title>
+      </Helmet>
       <section className=' p-2 md:p-6 mx-auto'>
         <h2 className='text-4xl font-extrabold mb-6 text-center mt-0'>
           Update Volunteer Post

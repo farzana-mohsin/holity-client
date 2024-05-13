@@ -1,5 +1,5 @@
 import { Link, useLoaderData } from "react-router-dom";
-
+import { Helmet } from "react-helmet";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 
@@ -23,6 +23,9 @@ const PostDetails = () => {
 
   return (
     <div className='my-7 container mx-auto'>
+      <Helmet>
+        <title>Holity Social Support | Post Details</title>
+      </Helmet>
       <div className='flex flex-col lg:flex-row items-center justify-center px-4 mb-14 lg:space-x-16 gap-8 lg:gap-20  md:px-10 lg:px-32'>
         <div>
           <h1 className='md:text-5xl font-bold leading-none text-3xl max-w-3xl '>

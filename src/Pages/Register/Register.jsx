@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 // import { FaBeer } from "react-icons/fa";
 import { MdRemoveRedEye } from "react-icons/md";
 import { IoIosEyeOff } from "react-icons/io";
+import { Helmet } from "react-helmet";
 
 const Register = () => {
   const [registerError, setRegisterError] = useState("");
@@ -57,9 +58,9 @@ const Register = () => {
 
   return (
     <div className='mb-10 lg:mb-2'>
-      {/* <Helmet> */}
-      <title>Remax Realty | Register</title>
-      {/* </Helmet> */}
+      <Helmet>
+        <title>Remax Realty | Register</title>
+      </Helmet>
 
       <div className='  lg:h-[calc(100vh-290px)] w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-amber-950 bg-opacity-90 text-gray-100 mx-auto my-3'>
         <h2 className='mb-3 text-3xl font-semibold text-center'>

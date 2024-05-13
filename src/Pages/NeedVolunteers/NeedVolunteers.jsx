@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import VolunteerCard from "../Home/VolunteerCard";
+import { Helmet } from "react-helmet";
 
 const NeedVolunteers = () => {
   const loader = useLoaderData();
@@ -35,6 +36,9 @@ const NeedVolunteers = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Holity Social Support | Volunteers Needed</title>
+      </Helmet>
       <form
         onSubmit={handleSearch}
         className='flex justify-center mx-auto my-10'

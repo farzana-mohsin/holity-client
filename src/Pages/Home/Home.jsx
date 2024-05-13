@@ -3,12 +3,17 @@ import { useState } from "react";
 import VolunteerCard from "./VolunteerCard";
 import { Link, useLoaderData } from "react-router-dom";
 
+import { Helmet } from "react-helmet";
+
 const Home = () => {
   const loader = useLoaderData();
   const [allItems] = useState(loader);
 
   return (
     <div>
+      <Helmet>
+        <title>Holity Social Support | Home</title>
+      </Helmet>
       <Carousel></Carousel>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 animate__animated animate__fadeInLeft '>
         {allItems.map((item, index) => (
