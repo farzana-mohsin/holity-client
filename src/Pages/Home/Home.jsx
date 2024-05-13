@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <Carousel></Carousel>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 animate__animated animate__fadeInLeft '>
         {allItems.map((item, index) => (
           <VolunteerCard
             key={index}
@@ -18,7 +18,7 @@ const Home = () => {
           ></VolunteerCard>
         ))}
       </div>
-      <div className='mx-auto text-center my-10 p-2 border border-black rounded-xl w-48'>
+      <div className='mx-auto text-center my-10 p-2 border-[#f77d5c] w-48 bg-[#6faf9f] text-white lg:px-4 lg:py-2 border-2 text-sm rounded-xl hover:bg-[#727C82]'>
         <Link to='/need-volunteers'>
           <button className='text-xl'>See All</button>
         </Link>

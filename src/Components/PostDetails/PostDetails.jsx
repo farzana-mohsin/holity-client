@@ -18,7 +18,7 @@ const PostDetails = () => {
     location,
     number,
     description,
-    postCreator,
+    organizer,
   } = postDetails;
 
   return (
@@ -33,8 +33,8 @@ const PostDetails = () => {
             <li>Deadline: {new Date(deadline).toLocaleDateString()}</li>
             <li>Number of Volunteers Needed: {number}</li>
             <li>Location: {location}</li>
-            <p>Organizer's name: {postCreator?.name}</p>
-            <p>Organizer's email: {postCreator?.email}</p>
+            <p>Organizer&apos;s name: {organizer?.name}</p>
+            <p>Organizer&apos;s email: {organizer?.email}</p>
           </ul>
           <p className='my-10'>{description}</p>
         </div>
@@ -46,7 +46,7 @@ const PostDetails = () => {
           />
         </div>
       </div>
-      {postCreator?.email === user.email ? (
+      {organizer?.email === user.email ? (
         ""
       ) : (
         <Link to={`/be-a-volunteer/${_id}`}>

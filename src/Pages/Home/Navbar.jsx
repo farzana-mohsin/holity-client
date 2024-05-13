@@ -3,14 +3,12 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 // import { MdOutlineVolunteerActivism } from "react-icons/md";
 
-// import { Link } from "react-router-dom";
-
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const [setTheme] = useState("pastel");
   const handleToggle = (e) => {
     if (e.target.checked) {
-      setTheme("forest");
+      setTheme("dim");
     } else setTheme("pastel");
   };
 
@@ -65,7 +63,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to='/manage-posts'
+                  to='/manage-my-posts'
                   className={({ isActive }) =>
                     isActive ? "font-bold text-[#f77d5c]" : "font-bold"
                   }
@@ -318,7 +316,7 @@ const Navbar = () => {
           <input
             onChange={handleToggle}
             type='checkbox'
-            value='forest'
+            value='dim'
             className='toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2'
           />
           <svg

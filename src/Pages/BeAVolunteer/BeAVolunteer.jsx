@@ -18,7 +18,7 @@ const BeAVolunteer = () => {
     location,
     number,
     description,
-    postCreator,
+    organizer,
   } = postDetails;
 
   const handleRequest = (e) => {
@@ -68,8 +68,8 @@ const BeAVolunteer = () => {
             <li>Deadline: {new Date(deadline).toLocaleDateString()}</li>
             <li>Number of Volunteers Needed: {number}</li>
             <li>Location: {location}</li>
-            <p>Organizer's name: {postCreator?.name}</p>
-            <p>Organizer's email: {postCreator?.email}</p>
+            <p>Organizer&apos;s name: {organizer?.name}</p>
+            <p>Organizer&apos;s email: {organizer?.email}</p>
             <p>Volunteer name: {user?.displayName}</p>
             <p>Volunteer email: {user?.email}</p>
           </ul>
@@ -113,7 +113,7 @@ const BeAVolunteer = () => {
               <option selected>Requested</option>
             </select>
           </div>
-          {postCreator?.email === user.email ? (
+          {organizer?.email === user.email ? (
             ""
           ) : (
             <button type='submit'>Request</button>
