@@ -7,11 +7,11 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  const [setTheme] = useState("emerald");
+  const [setTheme] = useState("pastel");
   const handleToggle = (e) => {
     if (e.target.checked) {
-      setTheme("retro");
-    } else setTheme("emerald");
+      setTheme("forest");
+    } else setTheme("pastel");
   };
 
   const navLinks = (
@@ -26,7 +26,7 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li className=' mr-0'>
+      <li className=' lg:mr-0'>
         <NavLink
           to='/need-volunteers'
           className={({ isActive }) =>
@@ -45,13 +45,13 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role='button'
-              className=' ml-0 mr-3 font-bold '
+              className=' lg:ml-0 lg:mr-3 font-bold hidden md:block '
             >
               My Profile
             </div>
             <ul
               tabIndex={0}
-              className='dropdown-content z-[4] menu p-2 mt-5 shadow bg-base-100 rounded-box w-48'
+              className='dropdown-content z-[4] menu p-2 lg:mt-5 shadow bg-base-100 rounded-box w-48'
             >
               <li>
                 <NavLink
@@ -138,7 +138,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role='button'
-              className='btn btn-ghost lg:hidden text-white'
+              className='btn btn-ghost lg:hidden '
             >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -157,9 +157,48 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className='menu menu-sm dropdown-content mt-3 z-[2] p-2 shadow bg-black rounded-box w-52 text-black'
+              className='menu menu-md dropdown-content z-[1] m-2 p-2 shadow bg-base-100 rounded-box w-52 '
             >
-              {navLinks}
+              <li className=''>
+                <NavLink
+                  to='/'
+                  className={({ isActive }) =>
+                    isActive ? "font-bold text-[#f77d5c] " : "font-bold"
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className=' lg:mr-0'>
+                <NavLink
+                  to='/need-volunteers'
+                  className={({ isActive }) =>
+                    isActive ? "font-bold text-[#f77d5c]" : "font-bold"
+                  }
+                >
+                  Volunteers Needed
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to='/add-post'
+                  className={({ isActive }) =>
+                    isActive ? "font-bold text-[#f77d5c]" : "font-bold"
+                  }
+                >
+                  Add Volunteer Post
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to='/manage-posts'
+                  className={({ isActive }) =>
+                    isActive ? "font-bold text-[#f77d5c]" : "font-bold"
+                  }
+                >
+                  Manage My Posts
+                </NavLink>
+              </li>
             </ul>
           </div>
           {/* <h1 className='animate__animated animate__fadeInLeft text-xl md:text-3xl font-bold text-white pl-1'>
@@ -180,7 +219,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className='navbar-end hidden lg:flex'>
-          <ul className='flex flex-row px-1 space-x-5 justify-center items-center text-lg'>
+          <ul className='flex flex-row px-1 lg:space-x-5 justify-center items-center lg:text-lg'>
             {navLinks}
           </ul>
         </div>
@@ -204,7 +243,7 @@ const Navbar = () => {
               </div>
 
               <button
-                className='btn bg-[#6faf9f] hover:bg-[#727C82] text-white md:px-4 md:py-2 border-2 border-[#f77d5c] text-sm rounded-xl mr-3'
+                className='btn bg-[#6faf9f] hover:bg-[#727C82] text-white px-2 py-1 lg:px-4 lg:py-2 border-2 border-[#f77d5c] text-xs lg:text-sm rounded-xl lg:mr-3'
                 onClick={() => handleSignOut()}
               >
                 Sign Out
@@ -213,12 +252,12 @@ const Navbar = () => {
           ) : (
             <div className='flex flex-row'>
               <Link to='/login'>
-                <button className='btn  bg-[#6faf9f] text-white md:px-4 md:py-2 border text-sm rounded-xl md:ml-2 hover:bg-[#727C82]'>
+                <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2 border text-sm rounded-xl lg:ml-2 hover:bg-[#727C82]'>
                   Login
                 </button>
               </Link>
               <Link to='/register'>
-                <button className='btn  bg-[#6faf9f] text-white md:px-4 md:py-2 border text-sm rounded-xl ml-2  hover:bg-[#727C82]'>
+                <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2 border text-sm rounded-xl lg:ml-2  hover:bg-[#727C82]'>
                   Register
                 </button>
               </Link>
@@ -275,18 +314,18 @@ const Navbar = () => {
           </ul>
         </div> */}
 
-        <label className='cursor-pointer grid place-items-center ml-6'>
+        <label className='cursor-pointer grid place-items-center ml-2 lg:ml-6'>
           <input
             onChange={handleToggle}
             type='checkbox'
-            value='retro'
+            value='forest'
             className='toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2'
           />
           <svg
             className='col-start-1 row-start-1 stroke-base-100 fill-base-100'
             xmlns='http://www.w3.org/2000/svg'
-            width='14'
-            height='14'
+            width='10'
+            height='10'
             viewBox='0 0 24 24'
             fill='none'
             stroke='currentColor'
