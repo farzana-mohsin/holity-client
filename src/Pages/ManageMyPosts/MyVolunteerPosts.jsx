@@ -51,7 +51,7 @@ const MyVolunteerPosts = () => {
   };
 
   return (
-    <div className='w-full my-10'>
+    <div className='w-full my-10 container mx-auto'>
       <table className=' divide-y divide-gray-200  w-full'>
         <thead className='bg-[#d6eed7]'>
           <tr>
