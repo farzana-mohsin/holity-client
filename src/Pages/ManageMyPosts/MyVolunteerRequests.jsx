@@ -51,7 +51,7 @@ const MyVolunteerRequests = () => {
   };
 
   return (
-    <div className='container mx-auto w-full my-10'>
+    <div className='container mx-auto w-full my-10 h-[calc(65vh-350px)]'>
       <table className=' divide-y divide-gray-200  w-full'>
         <thead className='bg-[#d6eed7]'>
           <tr>
