@@ -5,14 +5,17 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { useLoaderData } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 
 const UpdatePost = () => {
   const loader = useLoaderData();
+  const navigate = useNavigate();
   console.log(loader);
   const { user } = useContext(AuthContext);
   const [startDate, setStartDate] = useState(new Date());
 
   const {
+    location,
     _id,
     postTitle,
     category,
@@ -69,6 +72,7 @@ const UpdatePost = () => {
             icon: "success",
             confirmButtonText: "Go Back",
           });
+          navigate("/manage-my-posts");
         }
       });
   };
@@ -143,9 +147,9 @@ const UpdatePost = () => {
               <select
                 className='border p-2 rounded-md'
                 name='category'
+                defaultValue={category}
               >
                 <option
-                  defaultValue={category}
                   disabled
                   selected
                 >
@@ -185,7 +189,7 @@ const UpdatePost = () => {
                 defaultValue={numberOfVolunteers}
                 name='number'
                 type='number'
-                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
               />
             </div>
 

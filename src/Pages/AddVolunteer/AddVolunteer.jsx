@@ -3,9 +3,11 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const AddVolunteer = () => {
   const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
   const [startDate, setStartDate] = useState(new Date());
 
   const handleAddPost = (event) => {
@@ -44,12 +46,14 @@ const AddVolunteer = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {
+          console.log("data inserted");
           Swal.fire({
             title: "Success!",
             text: "Post added successfully",
             icon: "success",
             confirmButtonText: "Go Back",
           });
+          navigate("/manage-my-posts");
         }
       });
   };
