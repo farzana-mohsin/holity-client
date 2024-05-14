@@ -142,7 +142,7 @@ const Login = () => {
             <label className='label'></label>
           </div>
           <div className='form-control'>
-            <button className='w-full px-8 py-3  font-semibold bg-opacity-80  border-white btn  bg-[#ff9954] text-white lg:px-4 lg:py-2 border-2 text-sm rounded-xl  hover:bg-[#727C82] '>
+            <button className='w-full px-8 py-3 font-semibold bg-opacity-80 border-white btn bg-[#ff9954] text-white lg:px-4 lg:py-2 border-2 text-sm rounded-xl hover:bg-[#727C82]'>
               Login
             </button>
           </div>
