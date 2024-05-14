@@ -17,7 +17,7 @@ import bgImg4 from "../../../public/images/The-Career-Benefits-of-Volunteering-D
 
 export default function Carousel() {
   return (
-    <div className=' w-full px-6 mx-auto py-10 rounded-xl'>
+    <div className='w-full  pt-1 pb-10 mb-20 rounded-xl'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

@@ -8,7 +8,7 @@ const Navbar = () => {
   const [setTheme] = useState("pastel");
   const handleToggle = (e) => {
     if (e.target.checked) {
-      setTheme("dim");
+      setTheme("retro");
     } else setTheme("pastel");
   };
 
@@ -89,7 +89,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='navbar lg:px-10 py-5 shadow-lg mx-auto '>
+      <div className='navbar lg:px-10 py-5 shadow-lg mx-auto bg-[#d4f1e9]'>
         <div className='navbar-start'>
           <div className='dropdown'>
             <div
@@ -275,7 +275,7 @@ const Navbar = () => {
           <input
             onChange={handleToggle}
             type='checkbox'
-            value='dim'
+            value='retro'
             className='toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2'
           />
           <svg

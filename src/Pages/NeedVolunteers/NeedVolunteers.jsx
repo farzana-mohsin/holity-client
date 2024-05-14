@@ -86,7 +86,7 @@ const NeedVolunteers = () => {
   );
 
   return (
-    <div className='h-[calc(100vh-300px)]'>
+    <div className='min-h-[calc(100vh-270px)]'>
       <Helmet>
         <title>Holity | Volunteers Needed</title>
       </Helmet>

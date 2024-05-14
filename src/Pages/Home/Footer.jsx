@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div>
-      <footer className='px-4 divide-y bg-[#ecf6f3] text-gray-700'>
+      <footer className='px-4 divide-y bg-[#d4f1e9] text-gray-700'>
         <div className='container flex flex-col justify-center lg:justify-between py-3 mx-auto space-y-8 lg:flex-row lg:space-y-0'>
           <div className='lg:w-1/3'>
             {/* <a
@@ -152,7 +152,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='py-4 text-md text-center text-gray-600'>
+        <div className='py-4 text-md text-center text-gray-600 border-t-gray-400'>
           © 2024 Holity. All rights reserved.
         </div>
       </footer>

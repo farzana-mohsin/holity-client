@@ -17,6 +17,14 @@ const Home = () => {
         <title>Holity Social Support | Home</title>
       </Helmet>
       <Carousel></Carousel>
+      <h1 className='text-center text-3xl lg:text-6xl font-bold'>
+        Our Campaigns
+      </h1>
+      <p className='text-lg text-gray-500 text-center w-1/2 mx-auto mb-20 mt-5'>
+        We regularly organize charitable campaigns aimed at changing the lives
+        of people around the world Make your donation today to change the lives
+        of people globally. Even the smallest contributions matter!
+      </p>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 animate__animated animate__fadeInLeft '>
         {allItems.map((item, index) => (
           <VolunteerCard
