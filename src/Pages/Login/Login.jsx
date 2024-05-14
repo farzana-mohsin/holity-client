@@ -6,8 +6,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
-  const [setLoginError] = useState("");
-  const [setLoginSuccess] = useState("");
+  const [loginError, setLoginError] = useState("");
+  const [loginSuccess, setLoginSuccess] = useState("");
   const { login, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
 
   const navigate = useNavigate();
@@ -62,7 +62,7 @@ const Login = () => {
       <Helmet>
         <title>Holity | Login</title>
       </Helmet>
-      <div className='lg:h-[calc(100vh-290px)] w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-[#267d6c] bg-opacity-80 text-white mx-auto my-3'>
+      <div className='lg:h-[calc(100vh-290px)] w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-[#267d6c] bg-opacity-80 text-white mx-auto my-3 border-2 border-yellow-700'>
         <h2 className='mb-3 text-3xl font-semibold text-center'>
           Login to your account
         </h2>

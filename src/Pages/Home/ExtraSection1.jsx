@@ -3,7 +3,7 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect } from "react";
 
 const ExtraSection1 = () => {
-  const count1 = useMotionValue(8000);
+  const count1 = useMotionValue(6000);
   const count2 = useMotionValue(0);
   const count3 = useMotionValue(10000);
   const rounded1 = useTransform(count1, Math.round);
@@ -16,10 +16,10 @@ const ExtraSection1 = () => {
       duration: 4,
     });
     animate(count2, 100, {
-      duration: 4,
+      duration: 5,
     });
     animate(count3, 1560300, {
-      duration: 4,
+      duration: 6,
     });
   }, []);
 

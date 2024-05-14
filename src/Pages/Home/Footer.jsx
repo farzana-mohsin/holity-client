@@ -2,22 +2,10 @@ const Footer = () => {
   return (
     <div>
       <footer className='px-4 divide-y bg-[#d4f1e9] text-gray-700'>
-        <div className='container flex flex-col justify-center lg:justify-between py-3 mx-auto space-y-8 lg:flex-row lg:space-y-0'>
+        <div className='container flex flex-col items-center justify-center lg:justify-between py-3 mx-auto space-y-8 lg:flex-row lg:space-y-0'>
           <div className='lg:w-1/3'>
-            {/* <a
-              rel='noopener noreferrer'
-              href='#'
-              className='flex justify-center space-x-3 lg:justify-start'
-            >
-              <div className='flex items-center justify-center w-12 h-12 rounded-full bg-orange-800 text-xl font-bold'>
-                <span className='text-2xl  font-bold'></span>
-              </div>
-              <span className='self-center text-2xl font-semibold'>
-                Crown Art
-              </span>
-            </a> */}
             <img
-              className='w-[35%] my-6 ml-8'
+              className='w-[60%] lg:w-[35%] my-6 lg:ml-8 mx-auto'
               src='https://i.ibb.co/kHvrYjc/logo-default-334x134.png'
               alt=''
             />

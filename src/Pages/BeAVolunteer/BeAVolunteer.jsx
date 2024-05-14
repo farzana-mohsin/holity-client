@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { Helmet } from "react-helmet";
@@ -86,25 +86,21 @@ const BeAVolunteer = () => {
           className='px-4 py-2 mt-2 text-gray-700 bg-white border-2 rounded-md focus:ring-2 focus:ring-offset-2 border-[#6faf9f] focus:ring-[#6faf9f]'
           name='status'
         >
-          <option
-            disabled
-            selected
-          >
-            Pick one category
-          </option>
-          <option value='requested'>Requested</option>
+          <option selected>Requested</option>
           <option value='complete'>Complete</option>
         </select>
       </div>
       {organizer?.email === user.email ? (
         ""
       ) : (
-        <button
-          type='submit'
-          className='btn bg-[#6faf9f] hover:bg-[#727C82] text-white px-2 py-1 lg:px-4 lg:py-2 border-2 border-[#f77d5c] lg:text-sm rounded-xl lg:mr-3 w-full mt-6 mb-3 text-lg focus:ring-2 focus:ring-offset-2 focus:ring-orange-800'
-        >
-          Request to be a Volunteer
-        </button>
+        <Link to='/manage-my-posts'>
+          <button
+            type='submit'
+            className='btn bg-[#6faf9f] hover:bg-[#727C82] text-white px-2 py-1 lg:px-4 lg:py-2 border-2 border-[#f77d5c] lg:text-sm rounded-xl lg:mr-3 w-full mt-6 mb-3 text-lg focus:ring-2 focus:ring-offset-2 focus:ring-orange-800'
+          >
+            Request to be a Volunteer
+          </button>
+        </Link>
       )}
     </form>
   );

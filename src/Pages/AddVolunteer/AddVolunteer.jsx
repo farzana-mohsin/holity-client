@@ -62,8 +62,8 @@ const AddVolunteer = () => {
   return (
     <div
       className='flex justify-center items-center min-h-[calc(100vh-306px)] my-12
-      bg-[#2f9984] bg-opacity-80 p-24 lg:w-1/3 mx-auto py-7 lg:py-3 lg:my-5 border border-yellow-700
-      rounded-lg '
+      bg-[#2f9984] bg-opacity-80 p-24 lg:w-1/3 mx-auto py-7 lg:py-3 lg:my-5  border-yellow-700
+      rounded-lg border-2'
     >
       <Helmet>
         <title>Holity | Add Volunteer Post</title>
@@ -134,10 +134,10 @@ const AddVolunteer = () => {
                 >
                   Pick one category
                 </option>
-                <option value='Web Development'>Healthcare</option>
-                <option value='Graphics Design'>Education</option>
-                <option value='Digital Marketing'>Social Service</option>
-                <option value='Digital Marketing'>Animal Welfare</option>
+                <option>Healthcare</option>
+                <option>Education</option>
+                <option>Social Service</option>
+                <option>Animal Welfare</option>
               </select>
             </div>
             <div>
@@ -182,7 +182,7 @@ const AddVolunteer = () => {
                 name='text'
                 disabled
                 defaultValue={user?.displayName}
-                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
               />
             </div>
 

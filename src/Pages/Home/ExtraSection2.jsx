@@ -11,7 +11,7 @@ const ExtraSection2 = () => {
         Welcome to Holity, a nationwide charitable, <br />
         non-profit organization
       </h1>
-      <div className='flex flex-col lg:flex-row items-center justify-center mb-24 gap-8 lg:gap-4'>
+      <div className='flex flex-col lg:flex-row items-center justify-center mb-24 gap-8 lg:gap-8'>
         {/* <Animate
           animationIn='zoomIn'
           animationOut='zoomOut'

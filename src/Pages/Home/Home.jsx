@@ -1,5 +1,5 @@
 import Carousel from "./Carousel";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import VolunteerCard from "./VolunteerCard";
 import { Link, useLoaderData } from "react-router-dom";
 
@@ -10,6 +10,10 @@ import ExtraSection2 from "./ExtraSection2";
 const Home = () => {
   const loader = useLoaderData();
   const [allItems] = useState(loader);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
