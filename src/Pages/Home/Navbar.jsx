@@ -250,12 +250,12 @@ const Navbar = () => {
           ) : (
             <div className='flex flex-row'>
               <Link to='/login'>
-                <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2 border text-sm rounded-xl lg:ml-2 hover:bg-[#727C82]'>
+                <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2 border-2 text-sm rounded-xl lg:ml-2 hover:bg-[#727C82] border-[#f77d5c]'>
                   Login
                 </button>
               </Link>
               <Link to='/register'>
-                <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2 border text-sm rounded-xl lg:ml-2  hover:bg-[#727C82]'>
+                <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2  hover:bg-[#727C82] border-2 border-[#f77d5c]'>
                   Register
                 </button>
               </Link>

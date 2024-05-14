@@ -4,6 +4,7 @@ import VolunteerCard from "./VolunteerCard";
 import { Link, useLoaderData } from "react-router-dom";
 
 import { Helmet } from "react-helmet";
+import ExtraSection1 from "./ExtraSection1";
 
 const Home = () => {
   const loader = useLoaderData();
@@ -28,6 +29,7 @@ const Home = () => {
           <button className='text-xl'>See All</button>
         </Link>
       </div>
+      <ExtraSection1></ExtraSection1>
     </div>
   );
 };

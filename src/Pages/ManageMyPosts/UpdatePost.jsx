@@ -11,8 +11,6 @@ const UpdatePost = () => {
   const loader = useLoaderData();
   const navigate = useNavigate();
   console.log(loader);
-  const { user } = useContext(AuthContext);
-  const [startDate, setStartDate] = useState(new Date());
 
   const {
     location,
@@ -23,7 +21,10 @@ const UpdatePost = () => {
     thumbnail,
     numberOfVolunteers,
     description,
-  } = loader;
+  } = loader || {};
+
+  const { user } = useContext(AuthContext);
+  const [startDate, setStartDate] = useState(new Date(deadline) || new Date());
 
   const handleUpdatePost = (event) => {
     event.preventDefault();
@@ -171,10 +172,9 @@ const UpdatePost = () => {
               </label>
               <input
                 defaultValue={location}
-                placeholder='Location'
                 name='location'
                 type='text'
-                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
               />
             </div>
 
