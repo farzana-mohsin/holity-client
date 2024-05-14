@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const VolunteerTable = ({ allItems }) => {
   // const { postTitle, category, deadline, thumbnail, _id } = item;
   return (
-    <div>
+    <div className='container mx-auto w-1/2'>
       <table className=' divide-y divide-gray-200  w-full'>
         <thead className='bg-[#d6eed7]'>
           <tr>
@@ -31,10 +31,6 @@ const VolunteerTable = ({ allItems }) => {
               Deadline
               <button className='flex items-center gap-x-2'></button>
             </th>
-            <th
-              scope='col'
-              className='md:px-2 lg:px-6 py-3.5 text-sm font-semibold text-left rtl:text-right text-gray-500'
-            ></th>
           </tr>
         </thead>
 
@@ -56,7 +52,7 @@ const VolunteerTable = ({ allItems }) => {
                 <div className='flex items-center ml-4'>
                   <Link to={`/post-details/${item._id}`}>
                     {" "}
-                    <button className='text-gray-500 transition-colors duration-200   hover:text-red-500 focus:outline-none'>
+                    <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2  hover:bg-[#727C82] border-2 '>
                       View Details
                     </button>
                   </Link>

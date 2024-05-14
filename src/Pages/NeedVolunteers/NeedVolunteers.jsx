@@ -75,7 +75,7 @@ const NeedVolunteers = () => {
 
   const tableLayout = allItems.length ? (
     <>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 my-10 '>
+      <div className=' '>
         <VolunteerTable allItems={allItems}></VolunteerTable>
       </div>
     </>

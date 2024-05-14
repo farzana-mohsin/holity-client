@@ -28,9 +28,9 @@ const ExtraSection1 = () => {
       <h2 className=' text-3xl lg:text-7xl font-bold text-white text-center py-20'>
         How You Can Help
       </h2>
-      <div className='flex justify-center flex-col md:flex-row container mx-auto'>
-        <div className='w-1/3'>
-          <motion.h1 id='extraSection'>{rounded1}</motion.h1>;
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto'>
+        <div className='w-full flex flex-col my-16'>
+          <motion.h1 id='extraSection'>{rounded1}</motion.h1>
           <h2 className='text-white text-3xl font-bold'>
             Numbers of Volunteers
           </h2>
@@ -38,15 +38,15 @@ const ExtraSection1 = () => {
             We are more than ten thousand volunteers in different countries.
           </p>
         </div>
-        <div className='w-1/3 mx-auto'>
-          <motion.h1 id='extraSection'>{rounded2}</motion.h1>;
+        <div className='w-full mx-auto'>
+          <motion.h1 id='extraSection'>{rounded2}</motion.h1>
           <h2 className='text-white text-3xl font-bold'>Numbers of Projects</h2>
           <p className='w-1/2 text-white text-xl mb-7'>
-            Volunteers are a valuable resource to support the planet.
+            Our primary objectives are philanthropy and social well-being.
           </p>
         </div>
-        <div className='w-1/3'>
-          <motion.h1 id='extraSection'>{rounded3}</motion.h1>;
+        <div className='w-full'>
+          <motion.h1 id='extraSection'>{rounded3}</motion.h1>
           <h2 className='text-white text-3xl font-bold mb-7'>
             Numbers of Volunteer Hours
           </h2>
