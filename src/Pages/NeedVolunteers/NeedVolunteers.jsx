@@ -98,13 +98,13 @@ const NeedVolunteers = () => {
         >
           <div className='join'>
             <input
-              className='input input-bordered join-item rounded-l-xl border text-sm hover:bg-[#727C82] border-[#6faf9f]'
+              className='input input-bordered join-item rounded-l-xl border text-sm border-[#6faf9f]'
               name='input'
               placeholder='Search here'
             />
             <button
               type='submit'
-              className='btn join-item rounded-r-xl bg-[#6faf9f] text-white  border-2 text-sm hover:bg-[#727C82] border-[#f77d5c]'
+              className='btn join-item rounded-r-xl bg-[#6faf9f] text-white  border text-sm hover:bg-[#727C82] border-[#f77d5c]'
             >
               Search
             </button>

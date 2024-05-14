@@ -31,6 +31,12 @@ const VolunteerTable = ({ allItems }) => {
               Deadline
               <button className='flex items-center gap-x-2'></button>
             </th>
+            <th
+              scope='col'
+              className='md:px-2 lg:px-6 py-3.5 text-sm  text-left rtl:text-right text-gray-500 font-semibold'
+            >
+              <button className='flex items-center gap-x-2'></button>
+            </th>
           </tr>
         </thead>
 
@@ -52,7 +58,7 @@ const VolunteerTable = ({ allItems }) => {
                 <div className='flex items-center ml-4'>
                   <Link to={`/post-details/${item._id}`}>
                     {" "}
-                    <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2  hover:bg-[#727C82] border-2 '>
+                    <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2  hover:bg-[#727C82] border border-[#f77d5c] '>
                       View Details
                     </button>
                   </Link>

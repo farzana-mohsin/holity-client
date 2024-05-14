@@ -48,12 +48,11 @@ const MyVolunteerPosts = () => {
             }
           });
       }
-      // if the user confirms they want to delete it, only then the data will be fetched
     });
   };
 
   return (
-    <div className='w-full my-10 container mx-auto min-h-[calc(50vh-306px)]'>
+    <div className='w-full my-10 container mx-auto min-h-[calc(80vh-306px)]'>
       <Helmet>
         <title>Holity Social Support | My Volunteer Posts</title>
       </Helmet>
@@ -118,7 +117,7 @@ const MyVolunteerPosts = () => {
                     <td className='md:px-2 lg:px-8 py-4 text-md text-gray-500  whitespace-nowrap flex items-center '>
                       <Link
                         to={`/update-post/${post._id}`}
-                        className='text-gray-500 transition-colors duration-200   hover:text-yellow-500 focus:outline-none'
+                        className='text-gray-500 transition-colors duration-200 hover:text-green-600 focus:outline-none font-bold text-xl'
                       >
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
@@ -126,7 +125,7 @@ const MyVolunteerPosts = () => {
                           viewBox='0 0 24 24'
                           strokeWidth='1.5'
                           stroke='currentColor'
-                          className='w-5 h-5'
+                          className='w-6 h-6'
                         >
                           <path
                             strokeLinecap='round'
@@ -136,11 +135,11 @@ const MyVolunteerPosts = () => {
                         </svg>
                       </Link>
                     </td>
-                    <td className='md:px-2 lg:px-8 py-4 text-md whitespace-nowrap'>
+                    <td className='md:px-2 lg:px-10 py-4 text-md whitespace-nowrap'>
                       <div className='flex items-center text-center'>
                         <button
                           onClick={() => handleDelete(post._id)}
-                          className='text-gray-500 transition-colors duration-200   hover:text-red-500 focus:outline-none'
+                          className='text-gray-500 transition-colors duration-200 hover:text-red-500 focus:outline-none'
                         >
                           <svg
                             xmlns='http://www.w3.org/2000/svg'
@@ -148,7 +147,7 @@ const MyVolunteerPosts = () => {
                             viewBox='0 0 24 24'
                             strokeWidth='1.5'
                             stroke='currentColor'
-                            className='w-5 h-5'
+                            className='w-6 h-6'
                           >
                             <path
                               strokeLinecap='round'
