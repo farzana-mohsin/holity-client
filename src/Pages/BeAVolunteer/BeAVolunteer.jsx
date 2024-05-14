@@ -11,12 +11,12 @@ const BeAVolunteer = () => {
 
   const {
     _id,
+    numberOfVolunteers,
     postTitle,
     category,
     deadline,
     thumbnail,
     location,
-    number,
     description,
     organizer,
   } = postDetails;
@@ -66,7 +66,7 @@ const BeAVolunteer = () => {
           <p className='my-8 text-lg sm:mb-12 xl:max-w-3xl '>{category}</p>
           <ul>
             <li>Deadline: {new Date(deadline).toLocaleDateString()}</li>
-            <li>Number of Volunteers Needed: {number}</li>
+            <li>Number of Volunteers Needed: {numberOfVolunteers}</li>
             <li>Location: {location}</li>
             <p>Organizer&apos;s name: {organizer?.name}</p>
             <p>Organizer&apos;s email: {organizer?.email}</p>

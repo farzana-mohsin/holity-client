@@ -73,7 +73,10 @@ const router = createBrowserRouter([
             <ManageMyPosts></ManageMyPosts>
           </PrivateRoutes>
         ),
-        loader: () => fetch(`${import.meta.env.VITE_API_URL}/posts`),
+        loader: () =>
+          fetch(`${import.meta.env.VITE_API_URL}/posts`, {
+            credentials: "include",
+          }),
       },
       {
         path: "/update-post/:id",

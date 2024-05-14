@@ -53,17 +53,16 @@ const UpdatePost = () => {
       },
     };
 
-    fetch(
-      `${import.meta.env.VITE_API_URL}/post/${_id}`,
-      {
-        method: "PUT",
-        headers: {
-          "content-type": "application/json",
-        },
-        body: JSON.stringify(postData),
+    console.log("cookie: " + document.cookie);
+
+    fetch(`${import.meta.env.VITE_API_URL}/post/${_id}`, {
+      method: "PUT",
+      credentials: "include",
+      headers: {
+        "content-type": "application/json",
       },
-      { credentials: "include" }
-    )
+      body: JSON.stringify(postData),
+    })
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {

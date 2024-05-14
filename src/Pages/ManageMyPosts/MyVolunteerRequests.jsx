@@ -10,7 +10,10 @@ const MyVolunteerRequests = () => {
 
   useEffect(() => {
     fetch(
-      `${import.meta.env.VITE_API_URL}/application-post-details/${user?.email}`
+      `${import.meta.env.VITE_API_URL}/application-post-details/${user?.email}`,
+      {
+        credentials: "include",
+      }
     )
       .then((res) => res.json())
       .then((data) => {
@@ -31,6 +34,7 @@ const MyVolunteerRequests = () => {
       if (result.isConfirmed) {
         fetch(`${import.meta.env.VITE_API_URL}/applications/${_id}`, {
           method: "DELETE",
+          credentials: "include",
         })
           .then((res) => res.json())
           .then((data) => {

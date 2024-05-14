@@ -73,46 +73,6 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-
-          {/* <div className=''>
-            <ul className='menu menu-horizontal '>
-              <li className=''>
-                <details className='menu menu-horizontal z-[3] w-full'>
-                  <summary className='text-lg font-bold rounded-xl'>
-                    My Profile
-                  </summary>
-                  <ul className=' '>
-                    <li className=''>
-                      <NavLink
-                        to='/add-post'
-                        className={({ isActive }) =>
-                          isActive ? "font-bold text-[#f77d5c]" : "font-bold"
-                        }
-                      >
-                        Add Volunteer Post
-                      </NavLink>
-                    </li>
-                    <li className=''>
-                      <NavLink
-                        to='/manage-posts'
-                        className={({ isActive }) =>
-                          isActive ? "font-bold text-[#f77d5c]" : "font-bold"
-                        }
-                      >
-                        Manage My Posts
-                      </NavLink>
-                    </li>
-                  </ul>
-                </details>
-              </li>
-            </ul>
-          </div> */}
-          {/* <li className='text-white'>
-            <NavLink to='/add-item'>Add Craft</NavLink>
-          </li>
-          <li className='text-white'>
-            <NavLink to='/my-items'>My Arts & Crafts</NavLink>
-          </li> */}
         </>
       )}
     </>
@@ -155,7 +115,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className='menu menu-md dropdown-content z-[1] m-2 p-2 shadow bg-base-100 rounded-box w-52 '
+              className='menu menu-md dropdown-content z-[3] m-2 p-2 shadow bg-base-100 rounded-box w-52 '
             >
               <li className=''>
                 <NavLink
@@ -189,7 +149,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to='/manage-posts'
+                  to='/manage-my-posts'
                   className={({ isActive }) =>
                     isActive ? "font-bold text-[#f77d5c]" : "font-bold"
                   }

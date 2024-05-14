@@ -30,6 +30,7 @@ const MyVolunteerPosts = () => {
       if (result.isConfirmed) {
         fetch(`${import.meta.env.VITE_API_URL}/post/${_id}`, {
           method: "DELETE",
+          credentials: "include",
         })
           .then((res) => res.json())
           .then((data) => {
