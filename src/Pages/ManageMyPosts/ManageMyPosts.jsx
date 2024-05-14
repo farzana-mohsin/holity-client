@@ -3,6 +3,7 @@ import "react-tabs/style/react-tabs.css";
 import MyVolunteerPosts from "./MyVolunteerPosts";
 import MyVolunteerRequests from "./MyVolunteerRequests";
 import { Helmet } from "react-helmet";
+import "react-tabs/style/react-tabs.css";
 
 const ManageMyPosts = () => {
   // useEffect(() => {
@@ -32,7 +33,7 @@ const ManageMyPosts = () => {
             clicking on the tabs below.
           </p>
           <div className='flex items-center justify-center'>
-            <TabList>
+            <TabList className='react-tabs__tab'>
               <Tab>My Volunteer Posts</Tab>
               <Tab>My Volunteer Requests</Tab>
             </TabList>

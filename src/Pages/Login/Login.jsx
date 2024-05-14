@@ -6,8 +6,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
-  const [loginError, setLoginError] = useState("");
-  const [loginSuccess, setLoginSuccess] = useState("");
+  const [setLoginError] = useState("");
+  const [setLoginSuccess] = useState("");
   const { login, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
 
   const navigate = useNavigate();

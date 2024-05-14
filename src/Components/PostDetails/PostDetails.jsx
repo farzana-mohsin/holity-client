@@ -96,7 +96,7 @@ const PostDetails = () => {
           </div>
 
           <div className=' my-10 text-gray-700 dark:text-gray-200 text-center mx-auto'>
-            {organizer?.email === user.email ? (
+            {organizer?.email === user.email || numberOfVolunteers === 0 ? (
               ""
             ) : (
               <Link to={`/be-a-volunteer/${_id}`}>

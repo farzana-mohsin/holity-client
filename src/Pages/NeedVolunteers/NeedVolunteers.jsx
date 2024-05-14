@@ -3,6 +3,8 @@ import { useLoaderData } from "react-router-dom";
 import VolunteerCard from "../Home/VolunteerCard";
 import { Helmet } from "react-helmet";
 import VolunteerTable from "./VolunteerTable";
+import { BsGrid3X3GapFill } from "react-icons/bs";
+import { MdTableRows } from "react-icons/md";
 
 const NeedVolunteers = () => {
   const loader = useLoaderData();
@@ -75,7 +77,7 @@ const NeedVolunteers = () => {
 
   const tableLayout = allItems.length ? (
     <>
-      <div className=' '>
+      <div className=''>
         <VolunteerTable allItems={allItems}></VolunteerTable>
       </div>
     </>
@@ -84,30 +86,37 @@ const NeedVolunteers = () => {
   );
 
   return (
-    <div className='h-full'>
+    <div className='h-[calc(100vh-300px)]'>
       <Helmet>
-        <title>Holity Social Support | Volunteers Needed</title>
+        <title>Holity | Volunteers Needed</title>
       </Helmet>
-      <button onClick={() => changeLayout()}>Layout</button>
 
-      <form
-        onSubmit={handleSearch}
-        className='flex justify-center mx-auto my-10'
-      >
-        <div className='join'>
-          <input
-            className='input input-bordered join-item rounded-l-xl'
-            name='input'
-            placeholder='Search here'
-          />
-          <button
-            type='submit'
-            className='btn join-item rounded-r-xl'
-          >
-            Search
-          </button>
-        </div>
-      </form>
+      <div className='flex justify-center gap-10 items-center'>
+        <form
+          onSubmit={handleSearch}
+          className='flex my-10'
+        >
+          <div className='join'>
+            <input
+              className='input input-bordered join-item rounded-l-xl border text-sm hover:bg-[#727C82] border-[#6faf9f]'
+              name='input'
+              placeholder='Search here'
+            />
+            <button
+              type='submit'
+              className='btn join-item rounded-r-xl bg-[#6faf9f] text-white  border-2 text-sm hover:bg-[#727C82] border-[#f77d5c]'
+            >
+              Search
+            </button>
+          </div>
+        </form>
+        <button
+          onClick={() => changeLayout()}
+          className='flex items-center gap-2 text-lg border p-2 rounded-xl h-fit justify-center bg-[#6faf9f] text-white lg:px-4 lg:py-2 lg:ml-2 hover:bg-[#727C82] border-[#f77d5c]'
+        >
+          Change Layout {isCardLayout ? <MdTableRows /> : <BsGrid3X3GapFill />}
+        </button>
+      </div>
 
       {isCardLayout ? cardLayout : tableLayout}
     </div>

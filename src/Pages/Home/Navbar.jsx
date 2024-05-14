@@ -39,17 +39,16 @@ const Navbar = () => {
       </li> */}
       {user && (
         <>
-          <div className='dropdown dropdown-hover'>
+          <div className='dropdown dropdown-hover px-2'>
             <div
               tabIndex={0}
-              role='button'
-              className=' lg:ml-0 lg:mr-3 font-bold hidden md:block '
+              className='text-lg font-bold m-1'
             >
               My Profile
             </div>
             <ul
               tabIndex={0}
-              className='dropdown-content z-[4] menu p-2 lg:mt-5 shadow bg-base-100 rounded-box w-48'
+              className='dropdown-content z-[3] menu p-2 w-52 bg-base-100'
             >
               <li>
                 <NavLink

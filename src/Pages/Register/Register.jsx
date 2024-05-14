@@ -9,8 +9,8 @@ import { IoIosEyeOff } from "react-icons/io";
 import { Helmet } from "react-helmet";
 
 const Register = () => {
-  const [registerError, setRegisterError] = useState("");
-  const [registerSuccess, setRegisterSuccess] = useState("");
+  const [setRegisterError] = useState("");
+  const [setRegisterSuccess] = useState("");
 
   const [showPassword, setShowPassword] = useState(false);
 
