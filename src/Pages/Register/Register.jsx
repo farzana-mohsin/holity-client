@@ -59,14 +59,14 @@ const Register = () => {
   return (
     <div className='mb-10 lg:mb-2'>
       <Helmet>
-        <title>Remax Realty | Register</title>
+        <title>Holity | Register</title>
       </Helmet>
 
-      <div className='  lg:h-[calc(100vh-290px)] w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-amber-950 bg-opacity-90 text-gray-100 mx-auto my-3'>
+      <div className='  lg:h-[calc(100vh-290px)] w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-[#267d6c]  bg-opacity-80 text-white mx-auto my-3'>
         <h2 className='mb-3 text-3xl font-semibold text-center'>
           Register here!
         </h2>
-        <p className='text-sm text-center text-orange-300 mb-5'>
+        <p className='text-sm text-center text-[#ff9d41] mb-5'>
           Already have an account? Please login{" "}
           <Link
             to='/login'
@@ -93,7 +93,7 @@ const Register = () => {
               name='name'
               type='text'
               placeholder='name'
-              className='w-full px-3 py-2 border rounded-md border-orange-600 bg-gray-100 text-gray-900 focus:border-orange-600'
+              className='w-full px-3 py-2 border-2 rounded-md  border-orange-400 bg-gray-100 text-gray-900 focus:border-amber-800'
               required
             />
           </div>
@@ -105,7 +105,7 @@ const Register = () => {
               name='email'
               type='email'
               placeholder='email'
-              className='w-full px-3 py-2 border rounded-md border-orange-600 bg-gray-100 text-gray-900 focus:border-amber-800'
+              className='w-full px-3 py-2 border-2 rounded-md  border-orange-400 bg-gray-100 text-gray-900 focus:border-amber-800'
               required
             />
           </div>
@@ -117,7 +117,7 @@ const Register = () => {
               name='image'
               type='text'
               placeholder='photo URL'
-              className='w-full px-3 py-2 border rounded-md border-orange-600 bg-gray-100 text-gray-900 focus:border-amber-800'
+              className='w-full px-3 py-2 border-2 rounded-md  border-orange-400 bg-gray-100 text-gray-900 focus:border-amber-800'
               required
             />
           </div>
@@ -129,7 +129,7 @@ const Register = () => {
               name='password'
               type={showPassword ? "text" : "password"}
               placeholder='password'
-              className='w-full px-3 py-2 border rounded-md border-orange-600 bg-gray-100 text-gray-900 focus:border-amber-800'
+              className='w-full px-3 py-2 border-2 rounded-md  border-orange-400 bg-gray-100 text-gray-900 focus:border-amber-800'
               required
             />
             <span
@@ -140,7 +140,7 @@ const Register = () => {
             </span>
           </div>
           <div className='form-control py-3'>
-            <button className='w-full px-8 py-3  font-semibold rounded-xl bg-orange-400 bg-opacity-55  hover:bg-yellow-400 border border-white'>
+            <button className='w-full px-8 py-3 font-semibold bg-opacity-80 border-white btn  bg-[#ff9954] text-white lg:px-4 lg:py-2 border-2 text-sm rounded-xl  hover:bg-[#727C82]'>
               Register
             </button>
           </div>

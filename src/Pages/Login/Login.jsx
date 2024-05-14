@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
-// import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -59,90 +59,14 @@ const Login = () => {
 
   return (
     <div className='mb-10 lg:mb-2'>
-      {/* <Helmet> */}
-      <title>Remax Realty | Login</title>
-      {/* </Helmet> */}
-      {/* <div className='hero min-h-screen bg-base-200'>
-        <div className='hero-content flex-col lg:flex-row-reverse'>
-          <div className='text-center lg:text-left'>
-            <h1 className='text-5xl font-bold'>Login here</h1>
-          </div>
-          <div className='card shrink-0 w-full max-w-sm shadow-2xl bg-base-100'>
-            <form
-              onSubmit={handleLogIn}
-              className='card-body'
-            >
-              <div className='form-control'>
-                <label className='label'>
-                  <span className='label-text'>Email</span>
-                </label>
-                <input
-                  name='email'
-                  type='email'
-                  placeholder='email'
-                  className='input input-bordered'
-                  required
-                />
-              </div>
-              <div className='form-control'>
-                <label className='label'>
-                  <span className='label-text'>Password</span>
-                </label>
-                <input
-                  name='password'
-                  type='password'
-                  placeholder='password'
-                  className='input input-bordered'
-                  required
-                />
-                <label className='label'></label>
-              </div>
-              <div className='form-control mt-6 mb-0'>
-                <button className='btn btn-primary'>Login</button>
-              </div>
-              <p>
-                Not a member of ReMax? Please{" "}
-                <Link
-                  className='text-blue-700 font-bold'
-                  to='/register'
-                >
-                  Register
-                </Link>{" "}
-                <div className='flex justify-center'>
-                  <button
-                    onClick={() => handleGoogleSignIn()}
-                    className='btn btn-link'
-                  >
-                    Sign in with Google
-                  </button>
-                  <button
-                    onClick={() => handleGithubSignIn()}
-                    className='btn btn-link'
-                  >
-                    Sign in with Github
-                  </button>
-                </div>
-              </p>
-            </form>
-            {loginError && (
-              <p className='text-red-600 text-lg pb-3 ml-7 mt-0 mb-6'>
-                {loginError}
-              </p>
-            )}
-            {loginSuccess && (
-              <p className='text-green-600 text-xl pb-3 ml-8 mt-0 mb-6'>
-                {loginSuccess}
-              </p>
-            )}
-          </div>
-        </div>
-      </div> */}
-
-      <div className='lg:h-[calc(100vh-290px)] w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-amber-950 bg-opacity-90 text-gray-100 mx-auto my-3'>
+      <Helmet>
+        <title>Holity | Login</title>
+      </Helmet>
+      <div className='lg:h-[calc(100vh-290px)] w-full max-w-md p-4 rounded-md shadow sm:p-8 bg-[#267d6c] bg-opacity-80 text-white mx-auto my-3'>
         <h2 className='mb-3 text-3xl font-semibold text-center'>
           Login to your account
         </h2>
-        <p className='text-sm text-center text-orange-300 mb-5'>
+        <p className='text-sm text-center text-[#ff9d41] mb-5'>
           Dont have an account? Sign up{" "}
           <Link
             to='/register'
@@ -156,7 +80,7 @@ const Login = () => {
             onClick={() => handleGoogleSignIn()}
             aria-label='Login with Google'
             type='button'
-            className='flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-2 border-orange-200 focus:ring-orange-700'
+            className='flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-2 border-orange-200 focus:ring-orange-800'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -165,13 +89,13 @@ const Login = () => {
             >
               <path d='M16.318 13.714v5.484h9.078c-0.37 2.354-2.745 6.901-9.078 6.901-5.458 0-9.917-4.521-9.917-10.099s4.458-10.099 9.917-10.099c3.109 0 5.193 1.318 6.38 2.464l4.339-4.182c-2.786-2.599-6.396-4.182-10.719-4.182-8.844 0-16 7.151-16 16s7.156 16 16 16c9.234 0 15.365-6.49 15.365-15.635 0-1.052-0.115-1.854-0.255-2.651z'></path>
             </svg>
-            <p>Login with Google</p>
+            <p className='text-white'>Login with Google</p>
           </button>
           <button
             onClick={() => handleGithubSignIn()}
             aria-label='Login with GitHub'
             role='button'
-            className='flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-2 focus:ring-offset-2 border-orange-200 focus:ring-orange-800'
+            className='flex items-center justify-center w-full p-4 space-x-4 border rounded-md focus:ring-4 focus:ring-offset-4 border-orange-200 focus:ring-orange-800'
           >
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -188,45 +112,6 @@ const Login = () => {
           <p className='px-3 text-gray-100 py-0'>OR</p>
           <hr className='w-full text-gray-100' />
         </div>
-        {/* <form
-          onSubmit={handleLogIn}
-          // noValidate=''
-          // action=''
-          className='space-y-8'
-        >
-          <div className='space-y-4'>
-            <div className='space-y-2'>
-              <label
-                htmlFor='email'
-                className='block text-sm'
-              >
-                Email address
-              </label>
-              <input
-                type='email'
-                name='email'
-                id='email'
-                placeholder='leroy@jenkins.com'
-                className='w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-emerald-400'
-              />
-            </div>
-            <div className='space-y-2'>
-              <input
-                type='password'
-                name='password'
-                id='password'
-                placeholder='*****'
-                className='w-full px-3 py-2 border rounded-md border-gray-700 bg-gray-900 text-gray-100 focus:border-emerald-400'
-              />
-            </div>
-          </div>
-          <button
-            type='button'
-            className='w-full px-8 py-3 font-semibold rounded-md bg-emerald-400 text-white'
-          >
-            Sign in
-          </button>
-        </form> */}
         <form
           onSubmit={handleLogIn}
           className='card-body py-0'
@@ -239,7 +124,7 @@ const Login = () => {
               name='email'
               type='email'
               placeholder='email'
-              className='w-full px-3 py-2 border rounded-md  border-orange-400 bg-gray-100 text-gray-900 focus:border-amber-800'
+              className='w-full px-3 py-2 border-2 rounded-md  border-orange-400 bg-gray-100 text-gray-900 focus:border-amber-800'
               required
             />
           </div>
@@ -251,13 +136,13 @@ const Login = () => {
               name='password'
               type='password'
               placeholder='password'
-              className='w-full px-3 py-2 border rounded-md border-orange-400 bg-gray-100 text-gray-900 focus:border-amber-800'
+              className='w-full px-3 py-2 border-2 rounded-md border-orange-400 bg-gray-100 text-gray-900 focus:border-amber-800'
               required
             />
             <label className='label'></label>
           </div>
           <div className='form-control'>
-            <button className='w-full px-8 py-3  font-semibold rounded-xl bg-orange-400 bg-opacity-55  hover:bg-yellow-400 border border-white'>
+            <button className='w-full px-8 py-3  font-semibold bg-opacity-80  border-white btn  bg-[#ff9954] text-white lg:px-4 lg:py-2 border-2 text-sm rounded-xl  hover:bg-[#727C82] '>
               Login
             </button>
           </div>
