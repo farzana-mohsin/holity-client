@@ -11,7 +11,7 @@ const ExtraSection2 = () => {
         Welcome to Holity, a nationwide charitable, <br />
         non-profit organization
       </h1>
-      <div className='flex flex-col lg:flex-row items-center justify-center mb-24 gap-8 lg:gap-4 space-x-7'>
+      <div className='flex flex-col lg:flex-row items-center justify-center mb-24 gap-8 lg:gap-4'>
         {/* <Animate
           animationIn='zoomIn'
           animationOut='zoomOut'
@@ -32,7 +32,7 @@ const ExtraSection2 = () => {
           </p>
         </div>
         {/* </Animate> */}
-        <div className='w-1/2 bg-[#bff0e4] pr-14 pl-10 py-24 space-y-6 shadow-2xl'>
+        <div className='w-1/2 bg-[#bff0e4] pr-14 pl-8 py-24 space-y-6 shadow-2xl'>
           <h2 className='text-3xl font-bold'>
             <span className='text-5xl'>
               <TbCircleNumber2Filled />

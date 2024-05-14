@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const MyVolunteerRequests = () => {
   const { user } = useContext(AuthContext);
@@ -57,6 +58,9 @@ const MyVolunteerRequests = () => {
 
   return (
     <div className='container mx-auto w-full my-10 h-[calc(65vh-350px)]'>
+      <Helmet>
+        <title>Holity | My Volunteer Requests</title>
+      </Helmet>
       <div>
         {volunteerRequests.length ? (
           <>

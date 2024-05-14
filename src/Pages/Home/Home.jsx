@@ -20,7 +20,7 @@ const Home = () => {
       <h1 className='text-center text-3xl lg:text-6xl font-bold'>
         Our Campaigns
       </h1>
-      <p className='text-lg text-gray-500 text-center w-1/2 mx-auto mb-20 mt-5'>
+      <p className='text-lg text-gray-500 text-center w-1/2 mx-auto mb-10 lg:mb-20 mt-5'>
         We regularly organize charitable campaigns aimed at changing the lives
         of people around the world Make your donation today to change the lives
         of people globally. Even the smallest contributions matter!
