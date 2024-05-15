@@ -6,7 +6,7 @@ import {
 
 const ExtraSection2 = () => {
   return (
-    <div className='container mx-auto min-h-[400px] lg:mb-32 mt-16 w-full'>
+    <div className='container mx-auto min-h-[400px] my-20 lg:mb-32 lg:mt-16 w-full'>
       <h1 className='text-2xl lg:text-4xl text-center font-bold my-16'>
         Welcome to Holity, a nationwide charitable, <br />
         non-profit organization

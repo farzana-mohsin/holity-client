@@ -160,25 +160,25 @@ const Navbar = () => {
           </div>
           <div>
             <img
-              className='w-[60%]'
+              className='w-[70%]'
               src='https://i.ibb.co/kHvrYjc/logo-default-334x134.png'
               alt=''
             />
           </div>
         </div>
         <div className='navbar-end hidden lg:flex'>
-          <ul className='flex flex-row px-1 lg:space-x-5 justify-center items-center lg:text-lg'>
+          <ul className='flex flex-row px-1 lg:space-x-5 justify-center items-center'>
             {navLinks}
           </ul>
         </div>
-        <div className=' flex flex-col md:flex-row '>
+        <div className=' flex flex-col md:flex-row'>
           {user ? (
             <div className='flex md:flex-row items-center gap-2'>
               <div
-                className='tooltip tooltip-bottom border-none bg-none rounded-full mr-3 ml-0'
+                className='tooltip tooltip-bottom border-none bg-none rounded-full mr-2 ml-0'
                 data-tip={user?.displayName || "user not found"}
               >
-                <button className='rounded-full bg-none border-none w-12'>
+                <button className='rounded-full bg-none border-none lg:w-12'>
                   <img
                     className=' md:block rounded-full bg-none border-none'
                     alt='image not found'
@@ -212,55 +212,6 @@ const Navbar = () => {
             </div>
           )}
         </div>
-
-        {/* <div className='dropdown dropdown-end'>
-          <div
-            tabIndex={0}
-            role='button'
-            className='btn btn-ghost btn-circle avatar'
-          >
-            <div className='w-10 rounded-full'>
-              <img
-                alt='Tailwind CSS Navbar component'
-                src='https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'
-              />
-            </div>
-          </div>
-          <ul
-            tabIndex={0}
-            className='mt-3 z-[2] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52'
-          >
-            <li>
-              <a className='justify-between'>Profile</a>
-            </li>
-            <li>
-              <a>Settings</a>
-            </li>
-            <li>
-              <a>Logout</a>
-            </li>
-          </ul>
-        </div> */}
-
-        {/* <div className='flex-none'>
-          <ul className='menu menu-horizontal px-1'>
-            <li>
-              <details>
-                <summary className='py-[13px] bg-orange-800 text-white  border text-sm rounded-xl ml-1 hover:bg-yellow-400 '>
-                  My Profile
-                </summary>
-                <ul className='p-2 bg-base-100 rounded-t-none'>
-                  <li>
-                    <a>Link 1</a>
-                  </li>
-                  <li>
-                    <a>Link 2</a>
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>
-        </div> */}
 
         <label className='cursor-pointer grid place-items-center ml-2 lg:ml-6'>
           <input
