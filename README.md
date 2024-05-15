@@ -26,7 +26,7 @@
   - The navbar is responsive and will show the buttons for private routes if a user is logged in
   - A hover dropdown is used under My Profile
   - User display name is visible on hover once the user is logged in
-  - Two extra sections are Holity's values and How You can Help. On How you can help section, Framer's Motion animation is used for dynamic numbers count.
+  - Two extra sections are Holity's values and How You can Help. On How you can help section, `Framer's Motion` animation is used for dynamic numbers count.
 
 - On the `Need Volunteers` page, users can browse all the volunteer posts
 
@@ -51,7 +51,7 @@
 
 - Integration with other tools
 
-  - The application has been integrated with popular productivity tools, such as Framer Motion, Slider, React Helmet, React Tabs,
+  - The application has been integrated with popular productivity tools, such as Framer Motion, Slider, React Helmet, React Tabs, React Datepicker, Animate.css
   - React toastify were used to show the success and error messages
   - Images were hosted on imgbb.
 
