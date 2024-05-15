@@ -89,7 +89,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='navbar py-5 shadow-lg mx-auto bg-[#d4f1e9] md:px-5'>
+      <div className='navbar py-5 shadow-lg mx-auto bg-[#d4f1e9] md:px-8'>
         <div className='navbar-start'>
           <div className='dropdown dropdown-hover'>
             <div
