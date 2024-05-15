@@ -46,9 +46,9 @@ const NeedVolunteers = () => {
             Sorry, the title you are looking for doesn&apos;t exist.
           </p>
 
-          <div className='flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto'>
+          <div className='flex items-center justify-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto'>
             <Link to='/'>
-              <button className='w-1/2 py-2  tracking-wide  transition-colors duration-200  shrink-0 sm:w-auto dark:hover:bg-blue-500 dark:bg-blue-600 btn bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2 hover:bg-[#727C82] border-2 border-[#f77d5c]'>
+              <button className='lg:w-1/2 tracking-wide transition-colors duration-200 shrink-0 sm:w-auto dark:hover:bg-blue-500 dark:bg-blue-600 btn bg-[#6faf9f] text-white px-4 py-2 text-sm rounded-xl lg:ml-2 hover:bg-[#727C82] border-2 border-[#f77d5c]'>
                 Take me home
               </button>
             </Link>

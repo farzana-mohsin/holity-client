@@ -158,18 +158,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          {/* <h1 className='animate__animated animate__fadeInLeft text-xl md:text-3xl font-bold text-white pl-1'>
-            
-          </h1> */}
-          {/* <div className='flex items-center justify-center text-5xl  text-green-400 ml-2'>
-            <MdOutlineVolunteerActivism />
-          </div> */}
-          {/* <h1 className='animate__animated animate__fadeInLeft text-xl md:text-3xl font-bold text-green-400 pl-1'>
-            is Hope
-          </h1> */}
           <div>
             <img
-              className='w-[50%]'
+              className='w-[60%]'
               src='https://i.ibb.co/kHvrYjc/logo-default-334x134.png'
               alt=''
             />

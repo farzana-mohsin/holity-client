@@ -103,7 +103,7 @@ const MyVolunteerPosts = () => {
               <tbody className='bg-white divide-y divide-gray-200 '>
                 {volunteerPosts.map((post, index) => (
                   <tr key={index}>
-                    <td className='md:px-2 lg:px-8 py-4 text-sm text-gray-500  whitespace-nowrap'>
+                    <td className='md:px-2 lg:px-8 py-4 text-xs md:text-sm text-gray-500  whitespace-nowrap'>
                       {post.postTitle}
                     </td>
 

@@ -19,7 +19,7 @@ const ExtraSection2 = () => {
           animationOutDuration={1400}
           isVisible={true}
         > */}
-        <div className='w-1/2 bg-orange-200 pr-14 pl-8 py-24 space-y-6 shadow-2xl'>
+        <div className='lg:w-1/2 bg-orange-200 pr-14 pl-8 py-24 space-y-6 shadow-2xl'>
           <h2 className='text-3xl font-bold'>
             <span className='text-5xl'>
               <TbCircleNumber1Filled />
@@ -32,7 +32,7 @@ const ExtraSection2 = () => {
           </p>
         </div>
         {/* </Animate> */}
-        <div className='w-1/2 bg-[#bff0e4] pr-14 pl-8 py-24 space-y-6 shadow-2xl'>
+        <div className='lg:w-1/2 bg-[#bff0e4] pr-14 pl-8 py-24 space-y-6 shadow-2xl'>
           <h2 className='text-3xl font-bold'>
             <span className='text-5xl'>
               <TbCircleNumber2Filled />
@@ -44,7 +44,7 @@ const ExtraSection2 = () => {
             communities across the world
           </p>
         </div>
-        <div className='w-1/2 bg-[#f7e4c8] pr-14 pl-8 py-24 space-y-6 shadow-2xl'>
+        <div className='lg:w-1/2 bg-[#f7e4c8] pr-14 pl-8 py-24 space-y-6 shadow-2xl'>
           <h2 className='text-3xl font-bold'>
             <span className='text-5xl'>
               <TbCircleNumber3Filled />
