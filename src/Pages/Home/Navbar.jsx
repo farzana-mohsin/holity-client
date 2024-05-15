@@ -89,7 +89,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='navbar py-5 shadow-lg mx-auto bg-[#d4f1e9] md:px-5'>
+      <div className='navbar py-7 shadow-lg mx-auto bg-[#d4f1e9] md:px-5'>
         <div className='navbar-start'>
           <div className='dropdown dropdown-hover'>
             <div
@@ -160,7 +160,7 @@ const Navbar = () => {
           </div>
           <div>
             <img
-              className='w-[70%]'
+              className='w-[70%] h-[40%]'
               src='https://i.ibb.co/kHvrYjc/logo-default-334x134.png'
               alt=''
             />
