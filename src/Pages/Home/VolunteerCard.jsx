@@ -6,7 +6,7 @@ const VolunteerCard = ({ item }) => {
 
   return (
     <div>
-      <div className='flex flex-col items-center justify-center w-full max-w-sm mx-auto animate__animated animate__fadeInLeft '>
+      <div className='flex flex-col items-center justify-center w-full max-w-sm mx-auto'>
         <div
           className='w-full h-64 bg-[#d6eed7] bg-center bg-cover rounded-lg shadow-md flex justify-center items-center'
           style={{

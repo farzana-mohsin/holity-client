@@ -5,6 +5,7 @@ import { MdTableRows } from "react-icons/md";
 import { Link, useLoaderData } from "react-router-dom";
 import VolunteerCard from "../Home/VolunteerCard";
 import VolunteerTable from "./VolunteerTable";
+import "animate.css";
 
 const NeedVolunteers = () => {
   const loader = useLoaderData();
@@ -60,7 +61,7 @@ const NeedVolunteers = () => {
 
   const cardLayout = allItems.length ? (
     <>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 my-10 '>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 my-10 animate__animated animate__zoomIn'>
         {allItems.map((item, index) => (
           <VolunteerCard
             key={index}
