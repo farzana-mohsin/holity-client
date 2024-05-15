@@ -1,11 +1,12 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import "animate.css";
 
 const VolunteerCard = ({ item }) => {
   const { postTitle, category, deadline, thumbnail, _id } = item;
 
   return (
-    <div>
+    <div className='animate__animated animate__zoomIn'>
       <div className='flex flex-col items-center justify-center w-full max-w-sm mx-auto'>
         <div
           className='w-full h-64 bg-[#d6eed7] bg-center bg-cover rounded-lg shadow-md flex justify-center items-center'

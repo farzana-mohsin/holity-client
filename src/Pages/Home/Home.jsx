@@ -2,7 +2,7 @@ import Carousel from "./Carousel";
 import { useEffect, useState } from "react";
 import VolunteerCard from "./VolunteerCard";
 import { Link, useLoaderData } from "react-router-dom";
-
+import "animate.css";
 import { Helmet } from "react-helmet";
 import ExtraSection1 from "./ExtraSection1";
 import ExtraSection2 from "./ExtraSection2";
@@ -29,7 +29,7 @@ const Home = () => {
         of people around the world Make your donation today to change the lives
         of people globally. Even the smallest contributions matter!
       </p>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 animate__animated animate__fadeInLeft '>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 animate__animated animate__zoomIn'>
         {allItems.map((item, index) => (
           <VolunteerCard
             key={index}
