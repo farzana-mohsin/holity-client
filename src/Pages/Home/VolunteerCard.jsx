@@ -6,7 +6,7 @@ const VolunteerCard = ({ item }) => {
   const { postTitle, category, deadline, thumbnail, _id } = item;
 
   return (
-    <div className='animate__animated animate__zoomIn animate__repeat-2 animate__slower	3s animate__delay-3s'>
+    <div className='animate__animated animate__zoomIn animate__slower	3s animate__delay-2s'>
       <div className='flex flex-col items-center justify-center w-full max-w-sm mx-auto'>
         <div
           className='w-full h-64 bg-[#d6eed7] bg-center bg-cover rounded-lg shadow-md flex justify-center items-center'
