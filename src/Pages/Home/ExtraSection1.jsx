@@ -13,7 +13,7 @@ const ExtraSection1 = () => {
 
   useEffect(() => {
     animate(count1, 12755, {
-      duration: 6,
+      duration: 8,
     });
     animate(count2, 100, {
       duration: 8,
