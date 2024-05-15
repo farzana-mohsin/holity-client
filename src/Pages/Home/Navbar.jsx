@@ -167,7 +167,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className='navbar-end hidden lg:flex'>
-          <ul className='flex flex-row px-1 lg:space-x-5 justify-center items-center'>
+          <ul className='text-lg flex flex-row px-1 lg:space-x-5 justify-center items-center'>
             {navLinks}
           </ul>
         </div>
@@ -205,7 +205,7 @@ const Navbar = () => {
                 </button>
               </Link>
               <Link to='/register'>
-                <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2  hover:bg-[#727C82] border-2 border-[#f77d5c]'>
+                <button className='btn  bg-[#6faf9f] text-white lg:px-4 lg:py-2 text-sm rounded-xl ml-2 hover:bg-[#727C82] border-2 border-[#f77d5c]'>
                   Register
                 </button>
               </Link>
