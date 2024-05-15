@@ -23,14 +23,17 @@ The website provides a user-friendly interface and offers various features to en
   - User display name is visible on hover once the user is logged in
   - Two extra sections are Holity's values and How You can Help. On How you can help section, Framer's Motion animation is used for dynamic numbers count.
 - On Need Volunteers page, user can browse all the volunteer posts, search volunteer posts by Post Title, a grid and a table layout to view the posts.
-
+- The volunteer posts are sorted by date, with the oncoming deadline ones appearing first.
 - Private Routes - The application has multiple private routes, which are visible only if the users are logged in.
+- Under My Manage Posts private route - a tab format is used for these two section. - My Volunteer Posts & My Volunteer Requests.
 
-  - Once clicking on View Details from a volunteer post, the user needs to log in. The View Details and Be a Volunteer are private routes.
-    - Be a volunteer button is only visible to the volunteers and not the organizers. This button is invisible if the post doesn't need any more volunteers.
-  - The Add Volunteer Post page has the ability to add new volunteer post once the user is logged in.
-  - Users are able to see their added posts and their requested volunteer posts under Manage My Posts private route. A tab format is used for these two section.
-    - Users have the ability to update and delete their volunteer posts from My Volunteer Posts. Users can also cancel their request to be a volunteer from My Volunteer Requests section.
+  - Users are able to see their added posts and their requested volunteer posts under Manage My Posts.
+  - If there are not posts added or requests submitted, users will see buttons to add a post, see all volunteer positions, or directly go to homepage.
+  - Users have the ability to update and delete their volunteer posts from My Volunteer Posts. Users can also cancel their request to be a volunteer from My Volunteer Requests section.
+
+- Once clicking on View Details from a volunteer post, the user needs to log in. The View Details and Be a Volunteer are private routes.
+  - Be a volunteer button is only visible to the volunteers and not the organizers. This button is invisible if the post doesn't need any more volunteers.
+- The Add Volunteer Post page has the ability to add new volunteer post once the user is logged in.
 
 - Integration with other tools: The application has been integrated with popular productivity tools, such as Framer Motion, Slider, React Helmet, React Tabs,
 - React toastify were used to show the success and error messages
