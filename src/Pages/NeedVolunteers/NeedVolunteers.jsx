@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
-import VolunteerCard from "../Home/VolunteerCard";
 import { Helmet } from "react-helmet";
-import VolunteerTable from "./VolunteerTable";
 import { BsGrid3X3GapFill } from "react-icons/bs";
 import { MdTableRows } from "react-icons/md";
+import { useLoaderData } from "react-router-dom";
+import VolunteerCard from "../Home/VolunteerCard";
+import VolunteerTable from "./VolunteerTable";
 
 const NeedVolunteers = () => {
   const loader = useLoaderData();
@@ -20,11 +20,7 @@ const NeedVolunteers = () => {
     const form = e.target;
     const input = form.input.value;
     const searchString = input;
-    // console.log(searchString);
 
-    // fetch
-    //then, ...
-    // setAllItems
     fetch(`${import.meta.env.VITE_API_URL}/posts-by-title`, {
       method: "POST",
       headers: {

@@ -1,8 +1,8 @@
-// import Animate from "animate.css-react";
-
-import { TbCircleNumber1Filled } from "react-icons/tb";
-import { TbCircleNumber2Filled } from "react-icons/tb";
-import { TbCircleNumber3Filled } from "react-icons/tb";
+import {
+  TbCircleNumber1Filled,
+  TbCircleNumber2Filled,
+  TbCircleNumber3Filled,
+} from "react-icons/tb";
 
 const ExtraSection2 = () => {
   return (

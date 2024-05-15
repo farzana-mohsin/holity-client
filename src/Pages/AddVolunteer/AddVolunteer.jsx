@@ -1,10 +1,10 @@
 import { useContext, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
-import { useNavigate } from "react-router-dom";
-import { Helmet } from "react-helmet";
 
 const AddVolunteer = () => {
   const { user } = useContext(AuthContext);
@@ -48,7 +48,6 @@ const AddVolunteer = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.insertedId) {
-          console.log("data inserted");
           Swal.fire({
             title: "Success!",
             text: "Post added successfully",

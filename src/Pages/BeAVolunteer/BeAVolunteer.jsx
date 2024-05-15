@@ -1,13 +1,13 @@
 import { useContext, useState } from "react";
-import { Link, useLoaderData } from "react-router-dom";
-import { AuthContext } from "../../Provider/AuthProvider";
-import Swal from "sweetalert2";
 import { Helmet } from "react-helmet";
-import { MdOutlineVolunteerActivism } from "react-icons/md";
-import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
+import { AiOutlineAreaChart } from "react-icons/ai";
 import { BsCalendarDate } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
-import { AiOutlineAreaChart } from "react-icons/ai";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
+import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
+import { useLoaderData } from "react-router-dom";
+import Swal from "sweetalert2";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const BeAVolunteer = () => {
   const { user } = useContext(AuthContext);
@@ -28,12 +28,10 @@ const BeAVolunteer = () => {
   } = postDetails;
 
   const handleRequest = (e) => {
-    console.log("inside handle request");
     e.preventDefault();
     const form = e.target;
     const suggestion = form.suggestion.value;
     const status = form.status.value;
-    console.log(suggestion, status);
 
     const applicationData = {
       postId: _id,

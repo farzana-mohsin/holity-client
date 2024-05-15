@@ -1,12 +1,12 @@
-import { Link, useLoaderData } from "react-router-dom";
-import { Helmet } from "react-helmet";
 import { useContext, useState } from "react";
-import { AuthContext } from "../../Provider/AuthProvider";
-import { MdOutlineVolunteerActivism } from "react-icons/md";
-import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
+import { Helmet } from "react-helmet";
+import { AiOutlineAreaChart } from "react-icons/ai";
 import { BsCalendarDate } from "react-icons/bs";
 import { IoLocationSharp } from "react-icons/io5";
-import { AiOutlineAreaChart } from "react-icons/ai";
+import { MdOutlineVolunteerActivism } from "react-icons/md";
+import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
+import { Link, useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const PostDetails = () => {
   const { user } = useContext(AuthContext);

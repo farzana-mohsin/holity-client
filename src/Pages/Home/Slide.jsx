@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Slide = ({ image, text }) => {
   return (
@@ -24,6 +25,11 @@ const Slide = ({ image, text }) => {
       </div>
     </div>
   );
+};
+
+Slide.propTypes = {
+  image: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default Slide;

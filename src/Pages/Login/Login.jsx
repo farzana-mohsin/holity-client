@@ -1,13 +1,13 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../Provider/AuthProvider";
 import { Helmet } from "react-helmet";
+import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
-  const [loginError, setLoginError] = useState("");
-  const [loginSuccess, setLoginSuccess] = useState("");
+  const [, setLoginError] = useState("");
+  const [, setLoginSuccess] = useState("");
   const { login, signInWithGoogle, signInWithGithub } = useContext(AuthContext);
 
   const navigate = useNavigate();

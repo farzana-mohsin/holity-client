@@ -1,21 +1,10 @@
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import { Helmet } from "react-helmet";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import MyVolunteerPosts from "./MyVolunteerPosts";
 import MyVolunteerRequests from "./MyVolunteerRequests";
-import { Helmet } from "react-helmet";
-import "react-tabs/style/react-tabs.css";
 
 const ManageMyPosts = () => {
-  // useEffect(() => {
-  //   const allData = fetch(
-  //     `${import.meta.env.VITE_API_URL}/application-requests/:email`
-  //   );
-  //   const filteredItems = allData
-  //     ?.filter((item) => item?.email === user?.email)
-  //     .then((res) => res.json(filteredItems))
-  //     .then((data) => setVolunteerRequests(data));
-  // }, [loader, user?.email]);
-
   return (
     <div>
       <Helmet>
