@@ -10,11 +10,13 @@ import PrivateRoutes from "./PrivateRoutes";
 import BeAVolunteer from "../Pages/BeAVolunteer/BeAVolunteer";
 import ManageMyPosts from "../Pages/ManageMyPosts/ManageMyPosts";
 import UpdatePost from "../Pages/ManageMyPosts/UpdatePost";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
