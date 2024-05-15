@@ -8,9 +8,11 @@ import { TbRosetteDiscountCheckFilled } from "react-icons/tb";
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Provider/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 const BeAVolunteer = () => {
   const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const loader = useLoaderData();
   const [postDetails] = useState(loader);
@@ -58,6 +60,7 @@ const BeAVolunteer = () => {
             icon: "success",
             confirmButtonText: "Go Back",
           });
+          navigate("/manage-my-posts");
         }
       });
   };
@@ -93,14 +96,12 @@ const BeAVolunteer = () => {
       {organizer?.email === user.email ? (
         ""
       ) : (
-        // <Link to='/manage-my-posts'>
         <button
           type='submit'
           className='btn bg-[#6faf9f] hover:bg-[#727C82] text-white px-2 py-1 lg:px-4 lg:py-2 border-2 border-[#f77d5c] lg:text-sm rounded-xl lg:mr-3 w-full mt-6 mb-3 text-lg focus:ring-2 focus:ring-offset-2 focus:ring-orange-800'
         >
           Request to be a Volunteer
         </button>
-        // </Link>
       )}
     </form>
   );
