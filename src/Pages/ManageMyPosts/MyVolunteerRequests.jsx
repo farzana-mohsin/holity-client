@@ -59,7 +59,7 @@ const MyVolunteerRequests = () => {
   };
 
   return (
-    <div className='container mx-auto w-full my-10 h-[calc(65vh-350px)]'>
+    <div className='container mx-auto lg:w-full my-10 min-h-[calc(100vh-350px)]'>
       <Helmet>
         <title>Holity | My Volunteer Requests</title>
       </Helmet>
@@ -154,12 +154,12 @@ const MyVolunteerRequests = () => {
                   <div className='flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto'>
                     <Link to='/need-volunteers'>
                       {" "}
-                      <button className='w-1/2 px-5 py-2  tracking-wide  transition-colors duration-200  shrink-0 sm:w-auto dark:hover:bg-blue-500 dark:bg-blue-600 btn bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2 hover:bg-[#727C82] border-2 border-[#f77d5c]'>
+                      <button className='lg:w-1/2 lg:px-5 py-2  tracking-wide transition-colors duration-200 shrink-0 sm:w-auto dark:hover:bg-blue-500 dark:bg-blue-600 btn bg-[#6faf9f] text-white lg:py-2  text-sm rounded-xl lg:ml-2 hover:bg-[#727C82] border-2 border-[#f77d5c]'>
                         Volunteer Positions
                       </button>
                     </Link>
 
-                    <button className='w-1/2 px-5 py-2  tracking-wide  transition-colors duration-200  shrink-0 sm:w-auto dark:hover:bg-blue-500 dark:bg-blue-600 btn bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2 hover:bg-[#727C82] border-2 border-[#f77d5c]'>
+                    <button className='lg:w-1/2 lg:px-5 py-2 tracking-wide transition-colors duration-200 shrink-0 sm:w-auto dark:hover:bg-blue-500 dark:bg-blue-600 btn bg-[#6faf9f] text-white lg:py-2  text-sm rounded-xl lg:ml-2 hover:bg-[#727C82] border-2 border-[#f77d5c]'>
                       Take Me Home
                     </button>
                   </div>

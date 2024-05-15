@@ -40,7 +40,7 @@ const NeedVolunteers = () => {
 
   const noPageFound = (
     <section className='bg-white dark:bg-gray-900 h-[calc(83vh-300px)]'>
-      <div className='container flex items-center px-6 py-12 mx-auto'>
+      <div className='container flex items-center lg:px-6 py-12 mx-auto'>
         <div className='flex flex-col items-center max-w-sm mx-auto text-center'>
           <p className='mt-5 text-gray-500 dark:text-gray-400 text-2xl'>
             Sorry, the title you are looking for doesn&apos;t exist.
@@ -48,7 +48,7 @@ const NeedVolunteers = () => {
 
           <div className='flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto'>
             <Link to='/'>
-              <button className='w-1/2 px-5 py-2  tracking-wide  transition-colors duration-200  shrink-0 sm:w-auto dark:hover:bg-blue-500 dark:bg-blue-600 btn bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2 hover:bg-[#727C82] border-2 border-[#f77d5c]'>
+              <button className='w-1/2 py-2  tracking-wide  transition-colors duration-200  shrink-0 sm:w-auto dark:hover:bg-blue-500 dark:bg-blue-600 btn bg-[#6faf9f] text-white lg:px-4 lg:py-2  text-sm rounded-xl lg:ml-2 hover:bg-[#727C82] border-2 border-[#f77d5c]'>
                 Take me home
               </button>
             </Link>
@@ -84,12 +84,12 @@ const NeedVolunteers = () => {
   );
 
   return (
-    <div className='min-h-[calc(100vh-270px)]'>
+    <div className='lg:min-h-[calc(100vh-270px)]'>
       <Helmet>
         <title>Holity | Volunteers Needed</title>
       </Helmet>
 
-      <div className='flex justify-center gap-10 items-center'>
+      <div className='flex flex-col md:flex-row justify-center lg:gap-10 items-center'>
         <form
           onSubmit={handleSearch}
           className='flex my-10'
