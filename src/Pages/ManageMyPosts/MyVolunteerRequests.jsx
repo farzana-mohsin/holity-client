@@ -11,7 +11,9 @@ const MyVolunteerRequests = () => {
 
   useEffect(() => {
     fetch(
-      `${import.meta.env.VITE_API_URL}/application-post-details/${user?.email}`,
+      `${import.meta.env.VITE_API_URL}/application-post-details?email=${
+        user?.email
+      }`,
       {
         credentials: "include",
       }

@@ -10,11 +10,11 @@ const MyVolunteerPosts = () => {
   const [volunteerPosts, setVolunteerPosts] = useState([]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/posts/${user?.email}`)
+    fetch(`${import.meta.env.VITE_API_URL}/posts?email=${user?.email}`, {
+      credentials: "include",
+    })
       .then((res) => res.json())
-      .then((data) => {
-        setVolunteerPosts(data);
-      });
+      .then((data) => setVolunteerPosts(data));
   }, [user]);
 
   const handleDelete = (_id) => {

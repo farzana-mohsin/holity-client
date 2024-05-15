@@ -39,6 +39,7 @@ const AddVolunteer = () => {
 
     fetch(`${import.meta.env.VITE_API_URL}/posts`, {
       method: "POST",
+      credentials: "include",
       headers: {
         "content-type": "application/json",
       },

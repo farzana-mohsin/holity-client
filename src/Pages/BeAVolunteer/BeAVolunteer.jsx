@@ -28,6 +28,7 @@ const BeAVolunteer = () => {
   } = postDetails;
 
   const handleRequest = (e) => {
+    console.log("inside handle request");
     e.preventDefault();
     const form = e.target;
     const suggestion = form.suggestion.value;
@@ -44,6 +45,7 @@ const BeAVolunteer = () => {
 
     fetch(`${import.meta.env.VITE_API_URL}/applications`, {
       method: "POST",
+      credentials: "include",
       headers: {
         "content-type": "application/json",
       },
@@ -93,14 +95,14 @@ const BeAVolunteer = () => {
       {organizer?.email === user.email ? (
         ""
       ) : (
-        <Link to='/manage-my-posts'>
-          <button
-            type='submit'
-            className='btn bg-[#6faf9f] hover:bg-[#727C82] text-white px-2 py-1 lg:px-4 lg:py-2 border-2 border-[#f77d5c] lg:text-sm rounded-xl lg:mr-3 w-full mt-6 mb-3 text-lg focus:ring-2 focus:ring-offset-2 focus:ring-orange-800'
-          >
-            Request to be a Volunteer
-          </button>
-        </Link>
+        // <Link to='/manage-my-posts'>
+        <button
+          type='submit'
+          className='btn bg-[#6faf9f] hover:bg-[#727C82] text-white px-2 py-1 lg:px-4 lg:py-2 border-2 border-[#f77d5c] lg:text-sm rounded-xl lg:mr-3 w-full mt-6 mb-3 text-lg focus:ring-2 focus:ring-offset-2 focus:ring-orange-800'
+        >
+          Request to be a Volunteer
+        </button>
+        // </Link>
       )}
     </form>
   );

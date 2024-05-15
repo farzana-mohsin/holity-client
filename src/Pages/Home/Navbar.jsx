@@ -89,13 +89,13 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className='navbar lg:px-10 py-5 shadow-lg mx-auto bg-[#d4f1e9]'>
+      <div className='navbar py-5 shadow-lg mx-auto bg-[#d4f1e9]'>
         <div className='navbar-start'>
-          <div className='dropdown'>
+          <div className='dropdown dropdown-hover'>
             <div
               tabIndex={0}
               role='button'
-              className='btn btn-ghost lg:hidden '
+              className='btn btn-ghost lg:hidden'
             >
               <svg
                 xmlns='http://www.w3.org/2000/svg'
@@ -114,7 +114,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className='menu menu-md dropdown-content z-[3] m-2 p-2 shadow bg-base-100 rounded-box w-52 '
+              className='menu menu-md dropdown-content z-[3] p-2 shadow bg-base-100 rounded-box w-52 '
             >
               <li className=''>
                 <NavLink
