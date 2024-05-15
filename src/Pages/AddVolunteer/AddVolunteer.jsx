@@ -69,7 +69,7 @@ const AddVolunteer = () => {
         <title>Holity | Add Volunteer Post</title>
       </Helmet>
       <section className='p-2 md:p-6 mx-auto'>
-        <h2 className='text-3xl md:text-4xl font-extrabold mb-6 text-center mt-0 text-white'>
+        <h2 className='text-2xl md:text-4xl font-extrabold mb-6 text-center mt-0 text-white'>
           Add Volunteer Post
         </h2>
 
@@ -100,12 +100,12 @@ const AddVolunteer = () => {
                 placeholder='Post Title'
                 name='postTitle'
                 type='text'
-                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring'
               />
             </div>
 
             <div className='flex flex-col gap-2 py-1'>
-              <label className='text-white focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'>
+              <label className='text-white focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring'>
                 Deadline
               </label>
 
@@ -151,7 +151,7 @@ const AddVolunteer = () => {
                 placeholder='Location'
                 name='location'
                 type='text'
-                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring'
               />
             </div>
 
@@ -166,7 +166,7 @@ const AddVolunteer = () => {
                 defaultValue={0}
                 name='number'
                 type='number'
-                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring'
               />
             </div>
 
@@ -182,7 +182,7 @@ const AddVolunteer = () => {
                 name='text'
                 disabled
                 defaultValue={user?.displayName}
-                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring'
               />
             </div>
 
@@ -199,7 +199,7 @@ const AddVolunteer = () => {
                 name='email'
                 disabled
                 defaultValue={user?.email}
-                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring'
+                className='block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 focus:outline-none focus:ring'
               />
             </div>
           </div>
