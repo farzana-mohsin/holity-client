@@ -29,7 +29,7 @@ const Home = () => {
         of people around the world Make your donation today to change the lives
         of people globally. Even the smallest contributions matter!
       </p>
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 animate__animated animate__zoomIn animate__repeat-2 animate__slower	3s animate__delay-3s'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-12 animate__animated animate__zoomIn animate__slower	3s animate__delay-2s'>
         {allItems.map((item, index) => (
           <VolunteerCard
             key={index}
