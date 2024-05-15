@@ -8,7 +8,7 @@ const Navbar = () => {
   const [setTheme] = useState("pastel");
   const handleToggle = (e) => {
     if (e.target.checked) {
-      setTheme("retro");
+      setTheme("coffee");
     } else setTheme("pastel");
   };
 
@@ -217,7 +217,7 @@ const Navbar = () => {
           <input
             onChange={handleToggle}
             type='checkbox'
-            value='retro'
+            value='coffee'
             className='toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2'
           />
           <svg
