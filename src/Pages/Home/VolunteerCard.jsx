@@ -14,8 +14,8 @@ const VolunteerCard = ({ item }) => {
           }}
         ></div>
 
-        <div className='w-72 -mt-20 overflow-hidden rounded-lg shadow-lg dark:bg-gray-200 bg-white'>
-          <h3 className='py-4 font-bold tracking-wide text-center text-gray-200 forest:text-white'>
+        <div className='w-72 -mt-20 overflow-hidden rounded-lg shadow-lg dark:bg-gray-800 bg-white'>
+          <h3 className='py-4 font-bold tracking-wide text-center text-gray-800 dark:text-gray-100'>
             {" "}
             {postTitle}
           </h3>
