@@ -32,7 +32,7 @@ const PostDetails = () => {
         <title>Holity Social Support | Post Details</title>
       </Helmet>
 
-      <div className='w-full max-w-xl overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mx-auto'>
+      <div className='w-full max-w-xl overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-100 mx-auto'>
         <img
           className='object-cover object-center w-full h-96'
           src={thumbnail}
@@ -40,7 +40,7 @@ const PostDetails = () => {
         />
 
         <div className='flex items-center px-6 py-3 bg-[#6faf9f]'>
-          <h1 className='mx-3 text-lg font-semibold text-white flex items-center gap-2 dark:text-gray-200'>
+          <h1 className='mx-3 text-lg font-semibold text-white flex items-center gap-2 dark:text-gray-100'>
             <span className='text-2xl'>
               <MdOutlineVolunteerActivism />
             </span>
@@ -49,11 +49,11 @@ const PostDetails = () => {
         </div>
 
         <div className='px-6 py-4'>
-          <p className='py-2 text-gray-700 dark:text-gray-400 mb-8 text-sm'>
+          <p className='py-2 text-gray-700 dark:text-gray-200 mb-8 text-sm'>
             {description}
           </p>
 
-          <div className='flex items-center mt-4 text-gray-700 dark:text-gray-200 justify-between'>
+          <div className='flex items-center mt-4 text-gray-700 dark:text-gray-100 justify-between'>
             <h1 className='px-2 text-sm flex gap-2 items-center'>
               <span className='text-xl'>
                 <AiOutlineAreaChart />
@@ -84,7 +84,7 @@ const PostDetails = () => {
             </h1>
           </div>
 
-          <div className='flex items-center mt-4 text-gray-700  gap-10 justify-between'>
+          <div className='flex items-center mt-4 text-gray-700 gap-10 justify-between'>
             <h1 className='px-2 text-sm '>
               Organizer Name: <br />
               {organizer?.name}
@@ -95,7 +95,7 @@ const PostDetails = () => {
             </h1>
           </div>
 
-          <div className=' my-10 text-gray-700 text-center mx-auto'>
+          <div className='my-10 text-gray-700 text-center mx-auto'>
             {organizer?.email === user.email || numberOfVolunteers === 0 ? (
               ""
             ) : (
