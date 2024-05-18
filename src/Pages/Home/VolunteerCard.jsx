@@ -14,8 +14,8 @@ const VolunteerCard = ({ item }) => {
           }}
         ></div>
 
-        <div className='w-72 -mt-20 overflow-hidden  rounded-lg shadow-lg dark:bg-gray-800 bg-white '>
-          <h3 className='py-4  font-bold tracking-wide text-center text-gray-800 forest:text-white'>
+        <div className='w-72 -mt-20 overflow-hidden rounded-lg shadow-lg dark:bg-gray-200 bg-white'>
+          <h3 className='py-4 font-bold tracking-wide text-center text-gray-200 forest:text-white'>
             {" "}
             {postTitle}
           </h3>
@@ -25,12 +25,12 @@ const VolunteerCard = ({ item }) => {
           </span>
 
           <div className='flex items-center justify-between px-3 py-6'>
-            <span className='font-bold text-gray-800 dark:text-gray-200 '>
+            <span className='font-bold text-gray-800 dark:text-gray-200'>
               {new Date(deadline).toLocaleDateString()}
             </span>
             <Link to={`/post-details/${_id}`}>
               {" "}
-              <button className='px-4 py-3 text-sm font-extrabold text-white uppercase transition-colors duration-300 transform bg-[#6faf9f] rounded-lg hover:bg-gray-700 dark:hover:bg-gray-600 focus:bg-gray-700 dark:focus:bg-gray-600 focus:outline-none border-2 border-[#f77d5c]'>
+              <button className='px-4 py-3 text-sm font-extrabold text-white uppercase transition-colors duration-300 transform bg-[#6faf9f] rounded-lg hover:bg-gray-700 dark:hover:bg-gray-300 focus:bg-gray-700 dark:focus:bg-gray-300 focus:outline-none border-2 border-[#f77d5c]'>
                 View Details
               </button>
             </Link>
