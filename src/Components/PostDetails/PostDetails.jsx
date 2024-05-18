@@ -40,7 +40,7 @@ const PostDetails = () => {
         />
 
         <div className='flex items-center px-6 py-3 bg-[#6faf9f]'>
-          <h1 className='mx-3 text-lg font-semibold text-white flex items-center gap-2'>
+          <h1 className='mx-3 text-lg font-semibold text-white flex items-center gap-2 dark:text-gray-200'>
             <span className='text-2xl'>
               <MdOutlineVolunteerActivism />
             </span>
@@ -68,7 +68,7 @@ const PostDetails = () => {
             </h1>
           </div>
 
-          <div className='flex items-center mt-4 text-gray-700 dark:text-gray-200 justify-between'>
+          <div className='flex items-center mt-4 text-gray-700  justify-between'>
             <h1 className='px-2 text-sm flex gap-2 items-center'>
               <span className='text-xl'>
                 <IoLocationSharp />{" "}
@@ -84,7 +84,7 @@ const PostDetails = () => {
             </h1>
           </div>
 
-          <div className='flex items-center mt-4 text-gray-700 dark:text-gray-200 gap-10 justify-between'>
+          <div className='flex items-center mt-4 text-gray-700  gap-10 justify-between'>
             <h1 className='px-2 text-sm '>
               Organizer Name: <br />
               {organizer?.name}
@@ -95,7 +95,7 @@ const PostDetails = () => {
             </h1>
           </div>
 
-          <div className=' my-10 text-gray-700 dark:text-gray-200 text-center mx-auto'>
+          <div className=' my-10 text-gray-700 text-center mx-auto'>
             {organizer?.email === user.email || numberOfVolunteers === 0 ? (
               ""
             ) : (
